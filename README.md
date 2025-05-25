@@ -1,43 +1,56 @@
-# Chirpy Starter
+# Offensive Security Blog & Portfolio
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Welcome to my personal blog and portfolio, where I document my journey through offensive security, vulnerability research, and technical exploration. This site includes writeups, research, projects, and tools focused on real-world exploitation and adversarial techniques.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## 🧠 About Me
+I'm an aspiring offensive security researcher passionate about breaking systems to understand how they work. My main interests include:
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+- Binary & kernel exploitation
+- Reverse engineering
+- Red teaming & post-exploitation
+- Fuzzing & exploit development
+- CTFs (Capture The Flag)
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+This site is my knowledge base, a space to learn in public, and showcase the work I’m most proud of.
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
-```
+## 🗂️ Categories
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+The blog is organized into the following major sections:
 
-## Usage
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+### 1. Vulnerability Research
+- Binary Exploitation (userland, heap, stack)
+- Kernel Exploitation (Linux, Windows)
+- Fuzzing & Triage
+- CVE Analysis & Reproduction
+- Mitigation Bypass Techniques
 
-## Contributing
+### 2. Red Team Operations
+- Initial Access Techniques
+- Privilege Escalation
+- Lateral Movement
+- Defense Evasion (AV/EDR bypass, OPSEC)
+- Command and Control (C2) Tooling
+- Payload Development & Obfuscation
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+### 3. Exploit Development
+- Binary Exploitation
+- Kernel Exploitation
+- Fuzzing & Crash Analysis
+- Exploit Chains
+- Mitigation Bypasses
 
-## License
+### 4. CTFs & Challenges
+- Pwn
+- Rev
 
-This work is published under [MIT][mit] License.
+### 🧰 Tools & Scripts *(optional)*
+- Custom payloads, PoCs, and automation scripts
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+## 📂 Projects
+
+You'll also find a portfolio section showcasing personal projects:
+- Custom exploit toolkits
+- CTF tooling
+- Red team utilities
+- Research writeups
