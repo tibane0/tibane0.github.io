@@ -16,7 +16,7 @@ timezone: Africa/Johannesburg
 
 title: Nkateko Tibane # the main title
 
-tagline: Infomartion Security Portfolio/Blog  # it will display as the subtitle
+tagline: Information Security Portfolio/Blog  # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Portfolio and blog of an aspiring offensive security researcher. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.
@@ -146,7 +146,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "nkatekotibane.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
