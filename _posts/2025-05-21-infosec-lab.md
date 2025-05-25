@@ -1,7 +1,7 @@
 ---
 title: Offensive Security Lab
 date: 2025-05-21
-categories: [misc]
+categories: [misc, "offsec-lab"]
 tags: [lab] 
 ---
 # Offensive Security Playground
