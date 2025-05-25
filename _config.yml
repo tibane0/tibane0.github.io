@@ -115,7 +115,7 @@ comments:
   provider: giscus 
 
   giscus:
-    repo: # <gh-username>/<repo>
+    repo: "nkatekotibane/nkatekotibane.github.io"
     repo_id: R_kgDOOv_aMg
     category: General
     category_id: DIC_kwDOOv_aMs4CqjgI
