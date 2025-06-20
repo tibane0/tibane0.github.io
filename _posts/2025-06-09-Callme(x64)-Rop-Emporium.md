@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Callme 64-bit Rop Emporium
-date: 2025-04-23
+date: 2025-06-09
 categories:
   - pwn
 ---
