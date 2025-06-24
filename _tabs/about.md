@@ -87,7 +87,7 @@ order: 2
       <a href="https://github.com/tibane0" target="_blank">GitHub</a> |
       <a href="https://twitter.com/tibane101" target="_blank">Twitter</a> |
       <a href="mailto:nkatekotibane101@gmail.com">Email</a> |
-      <a href="www.linkedin.com/in/nkatekotibane" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank">LinkedIn</a>
     </div>
 
     <div class="roles">
