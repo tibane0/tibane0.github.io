@@ -14,9 +14,9 @@ Welcome to my curated collection of notes covering offensive security, software 
 
 ## Binary Exploitation
 
-- [Stack]()
-- [Heap]()
-- [Kernel]()
+- [Stack](#)
+- [Heap](#)
+- [Kernel](#)
 
 ## Red Teaming
 

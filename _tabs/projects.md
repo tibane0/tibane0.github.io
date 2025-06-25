@@ -91,7 +91,7 @@ order: 3
 <div class="project-grid">
 
 <div class="project-card">
-  <h3><a href="https://github.com/tibane0/Basic-C2" target="_blank">C2 Infrastructure</a></h3>
+  <h3><a href="https://github.com/tibane0/Command-n-Control" target="_blank">C2 Infrastructure</a></h3>
   <p>Building a full-featured Command and Control (C2) infrastructure from scratch, with the core server at its foundation.</p>
 
   <h5>Key Server Features & Components:</h5>
@@ -106,7 +106,7 @@ order: 3
   <div class="tags">
     <span>Offensive Tooling</span><span>Command and Control</span><span>Red Team</span><span>C/C++</span><span>PHP</span><span>Python</span><span>Malware Development</span> <span>Security Research</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/Basic-C2" target="_blank">🔗 View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/Command-n-Control" target="_blank">🔗 View Repository</a>
 </div>
 
 <!-- Project -->
