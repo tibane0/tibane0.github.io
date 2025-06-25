@@ -5,6 +5,10 @@ icon: fas fa-info-circle
 order: 2
 ---
 
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 <style>
 .profile-container {
   display: flex;
@@ -76,34 +80,39 @@ order: 2
 }
 </style>
 
-<div class="profile-container">
+
+  <div class="profile-container">
 
   <div class="profile-left">
     <img src="/assets/images/me.jpeg" alt="Profile Image">
+    <p><code>$ whoami</code></p>
     <h2>Nkateko Tibane</h2>
     <p>20 year old, IT student</p>
 
-    <div>
-      <a href="https://github.com/tibane0" target="_blank">GitHub</a> |
-      <a href="https://twitter.com/tibane101" target="_blank">Twitter</a> |
-      <a href="mailto:nkatekotibane101@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank">LinkedIn</a>
+    <div class="social-icons">
+      <a href="https://github.com/tibane0" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> |
+      <a href="https://twitter.com/tibane101" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a> |
+      <a href="mailto:nkatekotibane101@gmail.com" title="Email"><i class="fas fa-envelope"></i></a> |
+      <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> 
     </div>
 
     <div class="roles">
-      <p><code>$ whoami</code></p>
-      <p>&gt; Exploit Developer</p>
-      <p>&gt; Red Teamer</p>
-      <p>&gt; Software Developer</p>
+      <p><code>$ what-do-i-do</code></p>
+      <p>&gt; Exploit Development</p>
+      <p>&gt; Red Teaming</p>
+      <p>&gt; Software Development</p>
     </div>
   </div>
 
+
+
+
   <div class="profile-right">
-    Hello friend
+    Hello 
 
     I'm Nkateko, a 20-year-old cybersecurity enthusiast focused on real-world offensive security.
     <p>
-    This blog is my personal learning space where I will explore offensive security and share my progress, insights and discoveries. 
+    This blog is my personal sandbox, a space where I will explore offensive security and share my progress, insights and discoveries as I document my journey. 
     </p>
     Im currently building a solid foundation in offensive security. 
     <ul>
@@ -114,14 +123,15 @@ order: 2
     </ul>
     Here on this blog, you can expect to find walkthroughs on binary exploitation challanges and real world exploits, walkthroughs of vulnerable machines, deep dives on offensive tools and applying my software development skills to security.
         <div class="skills">
-      <h4>Skills</h4>
+      <h4>My Toolkit Includes:</h4>
       <span>C/C++</span>
       <span>Python</span>
-      <span>Malware Development</span>
+      <span>PHP</span>
+      <span>Penetration Testing</span>
       <span>Reverse Engineering</span>
       <span>Exploit Development</span>
       <span>Red Teaming</span>
-      <span>PHP</span>
+      
     </div>
 
     <div class="disclaimer">
@@ -135,6 +145,10 @@ order: 2
     </div>
   </div>
 
+
 </div>
 
+---
+
+Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
 

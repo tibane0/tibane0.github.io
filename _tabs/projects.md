@@ -91,33 +91,40 @@ order: 3
 <div class="project-grid">
 
 <div class="project-card">
-  <h3><a href="https://github.com/tibane0/Basic-C2" target="_blank">Basic Command and Control</a></h3>
-  <p>A basic command and control built from scratch using the C language. Developed to help better understand Command and Control Infrastructure.</p>
+  <h3><a href="https://github.com/tibane0/Basic-C2" target="_blank">C2 Infrastructure</a></h3>
+  <p>Building a full-featured Command and Control (C2) infrastructure from scratch, with the core server at its foundation.</p>
 
+  <h5>Key Server Features & Components:</h5>
+   <ul>
+    <li><strong>C2 Core Server:</strong> Robust beacon handling, task queue management, and secure session tracking.</li>
+    <li><strong>Implant:</strong> Stealthy agent with configurable beaconing, dynamic task execution, and sandbox/VM evasion.</li>
+    <li><strong>Web Panel:</strong> Operator interface for monitoring, tasking, and viewing agent responses.</li>
+    <li><strong>Automation Tools:</strong> Payload generation, server deployment scripts, and stager builders.</li>
+    <li><strong>Security:</strong> Encrypted communication, jitter/randomized beaconing, and multi-hop proxy support.</li>
+  </ul>
+  
   <div class="tags">
-    <span>Offensive Tooling</span><span>Command and Control</span><span>Red Team</span>
+    <span>Offensive Tooling</span><span>Command and Control</span><span>Red Team</span><span>C/C++</span><span>PHP</span><span>Python</span><span>Malware Development</span> <span>Security Research</span>
   </div>
   <a class="btn" href="https://github.com/tibane0/Basic-C2" target="_blank">🔗 View Repository</a>
 </div>
 
-
 <!-- Project -->
 <div class="project-card">
-  <h3><a href="https://github.com/tibane0/" target="_blank">Exploit Development</a></h3>
-  <p>A repository that demonstrates low-level skiils </p>
+  <h3><a href="https://github.com/tibane0/exploit-dev" target="_blank">Exploit Development</a></h3>
+  <p>Dive into the world of low-level binary exploitation with this repository. It features detailed writeups and custom exploits for challenging CTF puzzles, alongside in-depth analyses and PoCs for real-world CVEs</p>
 
-  <h5>Still Under Development</h5>
+
+  <h5>An Evolving Collection:</h5>
   <ul>
-    <li>Binary Exploitation</li>
-    <li>Kernel Exploitation</li>
-    <li>Browser Exploitaton</li>
+    <li><strong>Binary Exploitation:</strong> Ongoing exploration of various vulnerability classes and exploitation techniques.</li>
   </ul>
   <div class="tags">
-    <span>Language/Tool</span>
-    <span>Topic</span>
-    <span>Domain</span>
+    <span>Binary-Exploitation</span>
+    <span>pwn</span>
+    <span>c/c++</span>
   </div>
-  <a class="btn" href="https://github.com/your/repo-name" target="_blank">🔗 View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">🔗 View Repository</a>
 </div>
 
 
