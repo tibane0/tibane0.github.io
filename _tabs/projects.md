@@ -106,7 +106,7 @@ order: 3
   <div class="tags">
     <span>Offensive Tooling</span><span>Command and Control</span><span>Red Team</span><span>C/C++</span><span>PHP</span><span>Python</span><span>Malware Development</span> <span>Security Research</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/Command-n-Control" target="_blank">🔗 View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/Command-n-Control" target="_blank">View Repository</a>
 </div>
 
 <!-- Project -->
@@ -124,7 +124,7 @@ order: 3
     <span>pwn</span>
     <span>c/c++</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">🔗 View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">View Repository</a>
 </div>
 
 
