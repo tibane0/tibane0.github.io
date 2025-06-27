@@ -151,20 +151,17 @@ order: 2
 
 ##  Certifications
 
-###  Currently Pursuing
-- eJPTv2 – INE/OffSec Jr. Penetration Tester
-- CompTIA Security+
-- Burp Suite Certified Practitioner
-
 ###  Future Goals
 - OSCP – Offensive Security Certified Professional
 - CRTO – Certified Red Team Operator
-- PNPT – Practical Network Penetration Tester
-- CISA/CISM – Governance and Audit (long term)
+
+
+###  Currently Pursuing
+- N/A
+
 
 ###  Completed
-
-
+- N/A
 
 
 
