@@ -148,14 +148,15 @@ order: 2
 
 
 </div>
-
+z
 ##  Certifications
 
 ###  Future Goals
 - OSCP – Offensive Security Certified Professional
 - CRTO – Certified Red Team Operator
 - PNPT - Practical Network Penetration Tester
-
+- OSED - Offensive Security Exploit Development
+- 
 
 ###  Currently Pursuing
 - eJPT - INE's Security Junior Penetration Tester (eLearnSecurity)

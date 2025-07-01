@@ -4,6 +4,7 @@ title: Databases for hackers
 date: 2025-06-28
 categories:
   - misc
+  - databases
 ---
 # Why Databases Are Important In Offensive Security
 
