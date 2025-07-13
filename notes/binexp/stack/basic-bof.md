@@ -1,3 +1,8 @@
+---
+layout: page
+title: Buffer Overflow
+---
+
 
 # Stack Based Buffer Overflow
 

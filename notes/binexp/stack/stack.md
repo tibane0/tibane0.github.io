@@ -1,5 +1,10 @@
-# Stack
+---
+layout: page
+title: Notes
+---
 
+
+# Stack
 
 ## Memory Corruption
 - [Out of Bounds Read/Write](./Out-of-bounds.md) : 

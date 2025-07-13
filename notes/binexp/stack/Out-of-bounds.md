@@ -1,3 +1,8 @@
+---
+layout: page
+title: Out of bounds
+---
+
 
 
 # Out of bounds vulnerability
