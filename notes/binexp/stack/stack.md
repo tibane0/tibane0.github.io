@@ -7,9 +7,8 @@ title: Notes
 # Stack
 
 ## Memory Corruption
-- [Out of Bounds Read/Write](./Out-of-bounds.md) : 
-- [Basic Buffer Overflow](./basic-bof.md) :
-- [Ret2Win](./ret2win.md) :
+- [Out of Bounds Read/Write](./Out-of-bounds.html) : 
+- [Basic Buffer Overflow](./basic-bof.html) :
 ## Shellcoding
 
 ## Format String

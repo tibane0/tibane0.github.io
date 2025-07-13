@@ -78,7 +78,7 @@ if i enter 5 as index I get the password.
 
 > Stack layout
 
-![Out-of-bounds stack](assets/images/oob-read-stack.jpg)
+![Out-of-bounds stack](/assets/images/oob-read-stack.jpg)
 
 ### Mitigation
 To mitigate this vulnerability the program should check that the index (user input) is within the bounds of the array.

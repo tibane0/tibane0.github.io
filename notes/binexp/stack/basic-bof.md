@@ -40,7 +40,7 @@ int main() {
 
 Stack before gets function
 
-![Stack Before Overflow](assets/images/basic-bof.jpg)
+![Stack Before Overflow](/assets/images/basic-bof.jpg)
 
 
 if we enter more than 32 bytes the x variable will be overwritten. So we have to enter 32 bytes that will fill the buffer and then another 4 `0xdeadbeef` to overwrite x
@@ -48,7 +48,7 @@ if we enter more than 32 bytes the x variable will be overwritten. So we have to
 
 Stack after the gets function
 
-![](assets/images/basic-bof1.jpg)
+![](/assets/images/basic-bof1.jpg)
 
 `0xdeadbeef must be in least significant bit`
 
