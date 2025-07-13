@@ -1,7 +1,7 @@
 ---
-layout: notes
+layout: default
 title: Out of bounds
-permalink: /notes/binexp/stack/
+permalink: /notes/binexp/stack/out-of-bounds.html
 ---
 
 

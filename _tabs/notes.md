@@ -14,7 +14,7 @@ Welcome to my curated collection of notes covering offensive security, software 
 
 ## Binary Exploitation
 
-- [Stack](../notes/binexp/stack/stack.md)
+- [Stack](/notes/binexp/stack/)
 - [Heap](#)
 - [Kernel](#)
 

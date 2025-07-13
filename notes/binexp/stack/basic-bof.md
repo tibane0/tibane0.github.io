@@ -1,7 +1,7 @@
 ---
-layout: notes
+layout: default
 title: Stack Exploitation Notes
-permalink: /notes/binexp/stack/
+permalink: /notes/binexp/stack/basic-bof.html
 ---
 
 # Stack Based Buffer Overflow

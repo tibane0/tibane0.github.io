@@ -1,14 +1,16 @@
 ---
-layout: page
+layout: default
 title: Notes
+permalink: /notes/binexp/stack/
 ---
 
 
 # Stack
 
 ## Memory Corruption
-- [Out of Bounds Read/Write](./Out-of-bounds.html) : 
-- [Basic Buffer Overflow](./basic-bof.html) :
+- [Basic BOF](/notes/binexp/stack/basic-bof.html)
+- [Out-of-Bounds Read](/notes/binexp/stack/out-of-bounds.html)
+
 ## Shellcoding
 
 ## Format String
