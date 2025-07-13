@@ -41,15 +41,10 @@ void unsafe() {
 
 compile with `gcc -O0 -fno-stack-protector -fPIE -no-pie -z execstack -m32 oob.c `
 
-
-
-
-
 ### Mitigation
 
 ## Out of Bounds Reads
 Happens when a program reads data from a memory location that is beyond the end of an array. This is a information disclosure vulnerability as it can lead to attackers reading sensitive information. 
-
 ### Exploiting Out-of-Bounds Read 
 
 > Consider the following code snippet
