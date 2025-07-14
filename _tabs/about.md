@@ -156,10 +156,10 @@ z
 - CRTO – Certified Red Team Operator
 - PNPT - Practical Network Penetration Tester
 - OSED - Offensive Security Exploit Development
-- 
+- eJPT - INE's Security Junior Penetration Tester (eLearnSecurity)
 
 ###  Currently Pursuing
-- eJPT - INE's Security Junior Penetration Tester (eLearnSecurity)
+- [Certified Red Team Analyst (CRTA) [CyberWareFare Labs]](https://cyberwarfare.live/product/red-team-analyst-crta/)
 
 
 ###  Completed

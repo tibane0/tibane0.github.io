@@ -20,32 +20,45 @@ Happens when a program writes outside the designated boundaries of the array or 
 >  Consider the following code snippet
 
 ```c
-void unsafe() {
-	char names[5][32] = {0};
+void wunsafe() {
+    int x;
+    char names[5][32] = {0};
     int index;
     char buffer[32];
     for (int i = 0; i < sizeof(names)/sizeof(names[0]);i++) {
         memset(buffer, 0 , sizeof(buffer));
         printf("Index to store name: ");
+        fflush(stdout);
         fgets(buffer, sizeof(buffer) -1 , stdin);
         index = atoi(buffer);
         memset(buffer, 0, sizeof(buffer));
         printf("Enter Name: ");
+        fflush(stdout);
         fgets(buffer, sizeof(buffer) -1, stdin);
         buffer[strcspn(buffer, "\n")] = 0;
         strncpy(names[index], buffer, sizeof(buffer)); 
     }
-
     // print all names
     puts("Names");
     for (int i = 0; i < sizeof(names)/sizeof(names[0]);i++) {
-    
         printf("%d. %s \n", i+1, names[i]);
+    }
+    if (x == 0xdeadbeef) {
+        puts("Here is a shell");
+        win();
+    } else {
+        puts("You lose");
     }
 }
 ```
 
 compile with `gcc -O0 -fno-stack-protector -fPIE -no-pie -z execstack -m32 oob.c `
+
+> Stack before input
+
+![](/assets/images/oob-write-stack.jpg)
+
+
 
 ### Mitigation
 

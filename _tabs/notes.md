@@ -10,7 +10,6 @@ Welcome to my curated collection of notes covering offensive security, software 
 
 ---
 
-## misc
 
 ## Binary Exploitation
 
@@ -19,6 +18,11 @@ Welcome to my curated collection of notes covering offensive security, software 
 - [Kernel](#)
 
 ## Red Teaming
+- [Introduction](/notes/red-teaming/Introduction.html)
+- [Red Team Attack Lifecycle](/notes/red-teaming/Red%20Team%20Attack%20Lifecycle.html)
+
+## MISC
+
 
 ## Penetration Testing
 
