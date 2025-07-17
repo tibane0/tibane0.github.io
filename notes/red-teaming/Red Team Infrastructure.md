@@ -1,5 +1,11 @@
-
-
+---
+layout: default
+title: Red Teaming Infrastructure
+permalink: /notes/red-teaming/Red%20Team%20Attack%20Lifecycle.html
+tags:
+  - red-team
+red-team-infrastructure:
+---
 # Red Team Infrastructure
 
 **Command and Control Server** (C2)

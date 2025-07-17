@@ -1,3 +1,11 @@
+---
+layout: default
+title: Network Pivoting
+permalink: /notes/red-teaming/Red%20Team%20Attack%20Lifecycle.html
+tags:
+  - red-team
+---
+
 # What is Pivoting in Red Teaming?
 During red team engagements or real cyberattacks, the threat actors often gain access to a network via a single weak point (Compromised machine is sometimes call as the foothold), once inside the network, the threat actors attempt to hide hide themselves while moving to other systems connected to the compromised machine. Pivoting is the act of using a compromised system to spread between different systems once inside the network. After obtaining foothold, threat actors scan the network for other subnets and machines, looking for the most valuable and/or vulnerable points of attack. Gaining access to connected systems is easier from the inside because penetration testers use the compromised machine's to try and disguise their behavior as legitimate network traffic.
 
