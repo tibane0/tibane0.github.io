@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "red-teaming/Red Team Attack Lifecycle.md",
+                "file": "red-teaming/Red Team Infrastructure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Red Team Attack Lifecycle"
+              "title": "Red Team Infrastructure"
+            }
+          },
+          {
+            "id": "64aa046f5b4340e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "red-teaming/Network Pivoting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Network Pivoting"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,14 +183,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ac2ad0852379bcd",
+  "active": "64aa046f5b4340e5",
   "lastOpenFiles": [
+    "misc/Enterprise Network.md",
+    "red-teaming/Network Pivoting.md",
     "red-teaming/Introduction.md",
     "red-teaming/Red Team Attack Lifecycle.md",
     "binexp/Roadmap.md",
-    "binexp/stack/Out-of-bounds.md",
     "binexp/stack/basic-bof.md",
+    "binexp/stack/Out-of-bounds.md",
     "binexp/stack/index.md",
+    "red-teaming/Red Team Infrastructure.md",
     "binexp/stack/stack.md",
     "binexp/stack/Introduction.md",
     "binexp/stack/ASLR.md",

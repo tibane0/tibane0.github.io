@@ -44,10 +44,3 @@ Red Teams try to compromise systems and get access to sensitive information in a
 
 Red Teaming exercises help organizations get an threat actor's perspective on their systems and test Blue Team to see how they would withstand a real world cyberattack. Provides an understanding of blue team's capability to impact a threat's ability to operate.
 
-
-
-
-## Rules of Engagement
-
-
-
