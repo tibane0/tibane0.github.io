@@ -5,14 +5,16 @@ icon: fas fa-file-alt
 order: 4
 ---
 <script>
-function toggle(id) {
+function toggle(id, element) {
   var e = document.getElementById(id);
-  e.style.display = (e.style.display === "none") ? "flex" : "none";
-  
-  // Toggle arrow icon
-  var arrow = e.previousElementSibling.querySelector('.arrow');
-  if (arrow) {
-    arrow.textContent = arrow.textContent === '▶' ? '▼' : '▶';
+  if (e) {
+    e.style.display = (e.style.display === "none" || e.style.display === "") ? "flex" : "none";
+    
+    // Toggle arrow icon
+    var arrow = element.querySelector('.arrow');
+    if (arrow) {
+      arrow.textContent = (e.style.display === "flex") ? '▼' : '▶';
+    }
   }
 }
 </script>
@@ -101,17 +103,17 @@ function toggle(id) {
 </style>
 
 {% assign sorted_notes = site.notes | sort: "path" %}
-{% assign grouped_notes = sorted_notes | group_by_exp: "note", "note.path | split: '/' | slice: 1, 1" %}
+{% assign grouped_notes = sorted_notes | group_by_exp: "note", "note.path | split: '/' | slice: 1, 1 | first" %}
 
 <div class="notes-container">
   {% for dir in grouped_notes %}
-    <div class="folder" onclick="toggle('folder-{{ dir.name }}')">
+    <div class="folder" onclick="toggle('folder-{{ dir.name | slugify }}', this)">
       <span class="arrow">▶</span>
      <span>{{ dir.name }}</span>
     </div>
     
-    <div id="folder-{{ dir.name }}" style="display:none;" class="note-grid">
-      {% assign subgroups = dir.items | group_by_exp: "note", "note.path | split: '/' | slice: 2, 1" %}
+    <div id="folder-{{ dir.name | slugify }}" style="display:none;" class="note-grid">
+      {% assign subgroups = dir.items | group_by_exp: "note", "note.path | split: '/' | slice: 2, 1 | first" %}
       
       {% for subdir in subgroups %}
         {% assign notes = subdir.items %}
@@ -133,12 +135,12 @@ function toggle(id) {
             </div>
           {% endfor %}
         {% else %}
-          <div class="subfolder" onclick="event.stopPropagation();  toggle('sub-{{ dir.name }}-{{ subdir_name }}')">
+          <div class="subfolder" onclick="event.stopPropagation(); toggle('sub-{{ dir.name | slugify }}-{{ subdir_name | slugify }}', this)">
             <span class="arrow">▶</span>
             <span>📁 {{ subdir_name }}</span>
           </div>
           
-          <div id="sub-{{ dir.name }}-{{ subdir_name }}" style="display:none;" class="note-grid">
+          <div id="sub-{{ dir.name | slugify }}-{{ subdir_name | slugify }}" style="display:none;" class="note-grid">
             {% for note in subdir.items %}
               <div class="note-block">
                 <a href="{{ note.url | relative_url }}">
@@ -165,21 +167,8 @@ function toggle(id) {
 </div>
 
 <script>
-document.querySelectorAll('.folder, .subfolder').forEach(el => {
-  el.addEventListener('click', function(event) {
-    // Prevent toggling parent folders when clicking on subfolder
-    event.stopPropagation();
-    let targetId = this.nextElementSibling.id;
-    if (targetId) {
-      let e = document.getElementById(targetId);
-      if (e.style.display === "none") {
-        e.style.display = "flex";
-        this.querySelector('.arrow').textContent = '▼';
-      } else {
-        e.style.display = "none";
-        this.querySelector('.arrow').textContent = '▶';
-      }
-    }
-  });
-});
+// The click handlers are now directly on the folder and subfolder elements
+// and call the 'toggle' function with 'this' to pass the clicked element.
+// No need for a separate document.querySelectorAll loop for event listeners
+// as the onclick attributes handle it directly.
 </script>
