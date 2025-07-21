@@ -195,7 +195,7 @@ defaults:
       path: ""
       type: notes
     values:
-      layout: note
+      layout: page
       toc: true
       permalink: /notes:/:title/
 
