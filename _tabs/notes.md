@@ -133,7 +133,7 @@ function toggle(id) {
             </div>
           {% endfor %}
         {% else %}
-          <div class="subfolder" onclick="toggle('sub-{{ dir.name }}-{{ subdir_name }}')">
+          <div class="subfolder" onclick="event.stopPropagation();  toggle('sub-{{ dir.name }}-{{ subdir_name }}')">
             <span class="arrow">▶</span>
             <span>📁 {{ subdir_name }}</span>
           </div>
@@ -163,3 +163,23 @@ function toggle(id) {
     </div>
   {% endfor %}
 </div>
+
+<script>
+document.querySelectorAll('.folder, .subfolder').forEach(el => {
+  el.addEventListener('click', function(event) {
+    // Prevent toggling parent folders when clicking on subfolder
+    event.stopPropagation();
+    let targetId = this.nextElementSibling.id;
+    if (targetId) {
+      let e = document.getElementById(targetId);
+      if (e.style.display === "none") {
+        e.style.display = "flex";
+        this.querySelector('.arrow').textContent = '▼';
+      } else {
+        e.style.display = "none";
+        this.querySelector('.arrow').textContent = '▶';
+      }
+    }
+  });
+});
+</script>
