@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-title: About Me
+title: About me
 icon: fas fa-info-circle
 order: 2
 ---
@@ -78,6 +78,8 @@ order: 2
   font-weight: bold;
   font-size: 0.95rem;
 }
+
+
 </style>
 
 
@@ -145,29 +147,115 @@ order: 2
       
     </div>
   </div>
-
-
 </div>
-z
-##  Certifications
-
-###  Future Goals
-- OSCP – Offensive Security Certified Professional
-- CRTO – Certified Red Team Operator
-- PNPT - Practical Network Penetration Tester
-- OSED - Offensive Security Exploit Development
-- eJPT - INE's Security Junior Penetration Tester (eLearnSecurity)
-
-###  Currently Pursuing
-- [Certified Red Team Analyst (CRTA) [CyberWareFare Labs]](https://cyberwarfare.live/product/red-team-analyst-crta/)
 
 
-###  Completed
-- N/A
+## Certifications  
+## Completed
+
+### N/A
+
+---
+
+## Currently Pursuing
+
+
+<div class="cert-blocks">
+  <div class="cert-card">
+    <h3>CRTA</h3>
+    <p><a href="https://cyberwarfare.live/product/red-team-analyst-crta/" target="_blank">Certified Red Team Analyst</a></p>
+    <p><strong>Status:</strong> Currently Pursuing</p>
+  </div>
+</div>
 
 
 
 ---
 
+## Future Goals
+
+<div class="cert-blocks">
+
+<div class="cert-blocks">
+  <div class="cert-card">
+    <h3>OSCP</h3>
+    <p>Offensive Security Certified Professional</p>
+    <p><strong>Status:</strong> Goal</p>
+  </div>
+</div>
+
+  <div class="cert-card">
+    <h3>CRTO</h3>
+    <p>Certified Red Team Operator</p>
+    <p><strong>Status:</strong> Goal</p>
+  </div>
+
+  <div class="cert-card">
+    <h3>PNPT</h3>
+    <p>Practical Network Penetration Tester</p>
+    <p><strong>Status:</strong> Goal</p>
+  </div>
+
+  <div class="cert-card">
+    <h3>OSED</h3>
+    <p>Offensive Security Exploit Developer</p>
+    <p><strong>Status:</strong> Goal</p>
+  </div>
+
+  <div class="cert-card">
+    <h3>eJPT</h3>
+    <p>INE's Junior Penetration Tester</p>
+    <p><strong>Status:</strong> Goal</p>
+  </div>
+</div>
+
+
+
+<style>
+.cert-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.cert-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: var(--card-bg, #fff);
+  border: 2px solid #b266ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.02);
+  border-color: #9333ea;
+}
+
+.cert-card h3 {
+  color: #b266ff;
+  margin-top: 0;
+}
+
+.cert-card p {
+  margin: 0.4rem 0;
+}
+
+.cert-card a {
+  color: #b266ff;
+  text-decoration: none;
+}
+
+.cert-card a:hover {
+  text-decoration: underline;
+}
+</style>
+
+
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
+
 

@@ -2,7 +2,7 @@
 layout: default
 title: Introduction to Red Teaming
 tags: ["red-team"]
-permalink: /notes/red-teaming/Introduction.html
+
 ---
 
 

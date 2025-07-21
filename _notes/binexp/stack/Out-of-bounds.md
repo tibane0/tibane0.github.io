@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Out of bounds
-permalink: /notes/binexp/stack/out-of-bounds.html
 ---
 
 

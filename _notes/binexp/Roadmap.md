@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: roadmap to Red Teaming
+tags: ["red-team"]
+---
 
 # Binary Exploitaion Roadmap
 
