@@ -5,21 +5,25 @@ icon: fas fa-file-alt
 order: 4
 ---
 <script>
-function toggle(id, element) {
-  var e = document.getElementById(id);
-  if (e) {
-    e.style.display = (e.style.display === "none" || e.style.display === "") ? "flex" : "none";
-    
-    // Toggle arrow icon
-    var arrow = element.querySelector('.arrow');
-    if (arrow) {
-      arrow.textContent = (e.style.display === "flex") ? '▼' : '▶';
+// This function now directly manipulates the next sibling (the note-grid)
+function toggleVisibility(buttonElement) {
+  const targetElement = buttonElement.nextElementSibling; // Get the next sibling element (the note-grid)
+  const arrow = buttonElement.querySelector('.arrow');
+
+  if (targetElement) {
+    if (targetElement.style.display === "none" || targetElement.style.display === "") {
+      targetElement.style.display = "flex";
+      if (arrow) arrow.textContent = '▼';
+    } else {
+      targetElement.style.display = "none";
+      if (arrow) arrow.textContent = '▶';
     }
   }
 }
 </script>
 
 <style>
+/* Your existing styles remain unchanged */
 .folder {
   font-weight: bold;
   margin-top: 1.5rem;
@@ -107,7 +111,7 @@ function toggle(id, element) {
 
 <div class="notes-container">
   {% for dir in grouped_notes %}
-    <div class="folder" onclick="toggle('folder-{{ dir.name | slugify }}', this)">
+    <div class="folder" onclick="toggleVisibility(this)">
       <span class="arrow">▶</span>
      <span>{{ dir.name }}</span>
     </div>
@@ -135,7 +139,7 @@ function toggle(id, element) {
             </div>
           {% endfor %}
         {% else %}
-          <div class="subfolder" onclick="event.stopPropagation(); toggle('sub-{{ dir.name | slugify }}-{{ subdir_name | slugify }}', this)">
+          <div class="subfolder" onclick="event.stopPropagation(); toggleVisibility(this)">
             <span class="arrow">▶</span>
             <span>📁 {{ subdir_name }}</span>
           </div>
@@ -168,7 +172,7 @@ function toggle(id, element) {
 
 <script>
 // The click handlers are now directly on the folder and subfolder elements
-// and call the 'toggle' function with 'this' to pass the clicked element.
+// and call the 'toggleVisibility' function with 'this' to pass the clicked element.
 // No need for a separate document.querySelectorAll loop for event listeners
 // as the onclick attributes handle it directly.
 </script>
