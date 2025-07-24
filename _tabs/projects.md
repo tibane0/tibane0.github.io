@@ -3,149 +3,228 @@ title: Projects
 icon: fas fa-code
 order: 3
 ---
+
 <style>
-.tags {
-  margin-top: 0.5rem;
+:root {
+  --accent-color: #6c63ff;
+  --accent-hover: #5548c8;
+  --card-bg: #1e1e2e;
+  --border-color: #2a2a3a;
+  --tag-bg: #2a2a3a;
+  --tag-hover-bg: #3a3a4a;
+  --tag-text: #e0e0e0;
+  --text-muted: #b0b0b0;
 }
+
+.tags {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .tag {
   display: inline-block;
   background: var(--tag-bg);
   color: var(--tag-text);
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 12px;
   font-size: 0.75rem;
-  margin-right: 5px;
-  margin-top: 5px;
+  margin-right: 6px;
+  margin-bottom: 6px;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
+  font-family: 'Fira Code', monospace;
 }
+
 .tag:hover {
   background: var(--tag-hover-bg);
+  transform: translateY(-1px);
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
 .project-card {
   background-color: var(--card-bg);
-  padding: 1.2rem;
-  border: 1px solid #444;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.03);
-  transition: 0.3s ease;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
-  transform: scale(1.01);
-  border-color: #865dff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(108, 99, 255, 0.15);
+  border-color: var(--accent-color);
 }
 
 .project-card h3 {
   margin-top: 0;
-  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent-color), var(--accent-color));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+  padding-bottom: 2px;
+}
+
+.project-card h3 a:hover {
+  background-size: 100% 2px;
 }
 
 .project-card p {
   font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .project-card ul {
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
-.tags {
-  margin-top: 0.5rem;
+.project-card ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.5;
 }
 
-.tags span {
-  display: inline-block;
-  background: #3a3a3a;
-  color: #fff;
-  padding: 3px 8px;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  margin-right: 5px;
-  margin-top: 5px;
+.project-card ul li::before {
+  content: "▹";
+  position: absolute;
+  left: -1rem;
+  color: var(--accent-color);
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
   color: #fff;
-  background: #6c63ff;
-  padding: 6px 12px;
-  border-radius: 6px;
+  background: var(--accent-color);
+  padding: 8px 16px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  gap: 6px;
 }
+
 .btn:hover {
-  background: #5548c8;
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.btn:hover::after {
+  transform: translateX(2px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
 <div class="project-grid">
 
+<!-- TibaneC2 Project -->
 <div class="project-card">
-  <h3><a href="https://github.com/tibane0/TibaneC2" target="_blank">C2 Framework</a></h3>
-  <p>Building a full-featured Command and Control (C2) Framework from scratch, with the core server at its foundation.</p>
+  <img src="/assets/images/tibaneC2.png" alt="TibaneC2 Framework" class="project-image">
+  
+  <h3><a href="https://github.com/tibane0/TibaneC2" target="_blank">TibaneC2 Framework</a></h3>
+  <p>A modular Command and Control framework designed for red team operations and security research, built with operational security and extensibility in mind.</p>
 
-  <h5>Key Server Features & Components:</h5>
-   <ul>
-    <li><strong>C2 Core Server:</strong> Robust beacon handling, task queue management, and secure session tracking.</li>
-    <li><strong>Implant:</strong> Stealthy agent with configurable beaconing, dynamic task execution, and sandbox/VM evasion.</li>
-    <li><strong>Web Panel:</strong> Operator interface for monitoring, tasking, and viewing agent responses.</li>
-    <li><strong>CLI Console:</strong> Terminal-based operator interface for monitoring, tasking, and viewing agent responses.</li>
-    <li><strong>Automation Tools:</strong> Payload generation, server deployment scripts, and stager builders.</li>
+  <div class="feature-title">Key Components</div>
+  <ul>
+    <li><strong>Core Server:</strong> Multi-threaded C2 server with encrypted communications and session management</li>
+    <li><strong>Lightweight Implant:</strong> Configurable agent with sandbox evasion and multiple persistence mechanisms</li>
+    <li><strong>Dual Interface:</strong> Web-based GUI for visualization and CLI for rapid operations</li>
+    <li><strong>Payload Generator:</strong> Custom implant builder with various obfuscation techniques</li>
+    <li><strong>Modular Architecture:</strong> Easy to extend with new post-exploitation modules</li>
   </ul>
   
   <div class="tags">
-    <span>Offensive Tooling</span><span>Command and Control</span><span>Red Team</span><span>C/C++</span><span>PHP</span><span>Python</span><span>Malware Development</span> <span>Security Research</span>
+    <span class="tag">C/C++</span>
+    <span class="tag">Python</span>
+    <span class="tag">Red Teaming</span>
+    <span class="tag">C2 Framework</span>
+    <span class="tag">Malware Dev</span>
+    <span class="tag">Security Research</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/TibaneC2" target="_blank">View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/TibaneC2" target="_blank">View Project</a>
 </div>
 
-<!-- Project -->
+<!-- Exploit Development Project -->
 <div class="project-card">
-  <h3><a href="https://github.com/tibane0/exploit-dev" target="_blank">Exploit Development</a></h3>
-  <p>Dive into the world of low-level binary exploitation with this repository. It features detailed writeups and custom exploits for challenging CTF puzzles, alongside in-depth analyses and PoCs for real-world CVEs</p>
+  <img src="/assets/images/expdev.png" alt="Exploit Development" class="project-image">
+  
+  <h3><a href="https://github.com/tibane0/exploit-dev" target="_blank">Exploit Development Research</a></h3>
+  <p>Collection of binary exploitation techniques, vulnerability research, and proof-of-concept exploits for both CTF challenges and real-world software vulnerabilities.</p>
 
-
-  <h5>An Evolving Collection:</h5>
+  <div class="feature-title">Research Focus</div>
   <ul>
-    <li><strong>Binary Exploitation:</strong> Ongoing exploration of various vulnerability classes and exploitation techniques.</li>
+    <li><strong>Memory Corruption:</strong> Stack/heap overflows, use-after-free, type confusion</li>
+    <li><strong>Mitigation Bypasses:</strong> Techniques for defeating ASLR, DEP, Stack Canaries</li>
+    <strong>Kernel Exploitation:</strong> Driver vulnerabilities and privilege escalation vectors</li>
+    <li><strong>Modern Protections:</strong> Analysis of Control Flow Guard, CET, and other mitigations</li>
+    <li><strong>Tool Development:</strong> Custom fuzzers and exploit automation scripts</li>
   </ul>
+  
   <div class="tags">
-    <span>Binary-Exploitation</span>
-    <span>pwn</span>
-    <span>c/c++</span>
-    <span>rev</span>
+    <span class="tag">Binary Exploitation</span>
+    <span class="tag">Reverse Engineering</span>
+    <span class="tag">C/C++</span>
+    <span class="tag">Python</span>
+    <span class="tag">Pwntools</span>
+    <span class="tag">CTF</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">View Repository</a>
+  <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">View Research</a>
 </div>
 
-
-<!-- Project -->
-<div class="project-card">
-  <h3><a href="https://github.com/tibane0/offensive-security-playgroud" target="_blank">Offensive Security Lab</a></h3>
-  <p>Brief description of what the project does, the problem it solves, or the use case it addresses.</p>
-  <ul>
-    <li>Key Feature 1</li>
-    <li>Key Feature 2</li>
-    <li>Key Feature 3</li>
-  </ul>
-  <div class="tags">
-    <span>SysAdmin</span>
-    <span>Firewalls</span>
-    <span></span>
-  </div>
-  <a class="btn" href="https://github.com/tibane0/offensive-security-playgroud" target="_blank">View Repository</a>
 </div>
-
-
-</div>
-
