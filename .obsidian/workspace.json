@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d59ffb33e53104a",
+        "id": "ba60cf96a61dde13",
         "type": "tabs",
         "children": [
           {
-            "id": "6fcc4ed2b1341d52",
+            "id": "e4e91cc0a59f0380",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,10 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fcc4ed2b1341d52",
+  "active": "e4e91cc0a59f0380",
   "lastOpenFiles": [
-    "_posts/2025-06-28-Databases.md",
     "_posts/2025-07-21-Pwn-Environment-Lab.md",
+    "_posts/2025-06-28-Databases.md",
     "_notes/red-teaming/Introduction.md",
     "_notes/red-teaming/Network Pivoting.md",
     "_notes/red-teaming/Operation Execution Workflow.md",
