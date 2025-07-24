@@ -1,4 +1,12 @@
-
+---
+layout: post
+title: 
+date: 2025-04-23
+categories:
+  - pwn
+  - offsec-lab
+  - rev
+---
 # Setting Up  Pwn Environment Lab with Docker
 
 Reverse Engineering and binary exploitation require a well-configured environment with the right tools. Learning binary exploitation requires to learn on older environment which can be tedious to setup due to dependency conflicts, outdated packages, and compatibility issues.
