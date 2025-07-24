@@ -25,6 +25,12 @@ echo "🚀 Deploying to $BRANCH branch..."
 # Navigate into build directory
 cd "$BUILD_DIR"
 
+if [ -d .git ]; then
+	echo "cleaning up existing git repo in _site..."
+	rm -rf .git
+fi
+
+
 # Initialize git in _site
 git init
 git checkout -b "$BRANCH"
