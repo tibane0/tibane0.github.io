@@ -168,7 +168,7 @@ collections:
     sort_by: order
   notes:
     output: true
-    permalink: /notes/:title/
+    permalink: /notes/:path/
 
 defaults:
   - scope:
