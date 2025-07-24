@@ -197,7 +197,7 @@ defaults:
     values:
       layout: page
       toc: true
-      permalink: /notes:/:title/
+      permalink: /notes:/:path/
 
 
 sass:
