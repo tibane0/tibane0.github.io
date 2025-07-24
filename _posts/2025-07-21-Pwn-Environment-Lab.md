@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Binary Exploitation Docker Environment
-date: 2025-04-23
+date: 2025-07-23
 categories:
   - pwn
   - offsec-lab
