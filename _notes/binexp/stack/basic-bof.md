@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Stack Exploitation Notes
+tags:
+  - pwn
 ---
 
 # Stack Based Buffer Overflow

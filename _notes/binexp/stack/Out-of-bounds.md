@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Out of bounds
+tags:
+  - pwn
 ---
 
 
