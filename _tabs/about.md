@@ -182,7 +182,7 @@ order: 2
     <p>Offensive Security Certified Professional</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
-</div>
+
 
   <div class="cert-card">
     <h3>CRTO</h3>
@@ -207,6 +207,7 @@ order: 2
     <p>INE's Junior Penetration Tester</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
+  
 </div>
 
 

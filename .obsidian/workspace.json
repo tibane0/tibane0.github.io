@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/red-teaming/Operation Execution Workflow.md",
+                "file": "_tabs/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Operation Execution Workflow"
+              "title": "about"
             }
           }
         ]
@@ -170,34 +170,39 @@
   },
   "active": "e4e91cc0a59f0380",
   "lastOpenFiles": [
+    "_tabs/notes.md",
+    "_notes/binexp/heap/House-of-Force.md",
     "_posts/2025-07-21-Pwn-Environment-Lab.md",
-    "_site/notes:/basic-bof/index.html",
-    "_site/notes:/Roadmap/index.html",
-    "_site/notes:/Red-Team-Attack-Lifecycle/index.html",
-    "_site/notes:/Red-Team-Infrastructure/index.html",
-    "_site/notes:/Out-of-bounds/index.html",
-    "_site/notes:/Operation-Execution-Workflow/index.html",
-    "_site/notes:/OpSec/index.html",
-    "_site/notes:/Network-Pivoting/index.html",
-    "_site/notes:/Introduction/index.html",
-    "_site/notes:/Format-String/index.html",
+    "_notes/binexp/heap/Introduction.md",
+    "_notes/binexp/stack/Out-of-bounds.md",
+    "_posts/2025-04-28-Gambling.md",
+    "_notes/binexp/stack/Format-String.md",
+    "_notes/red-teaming/Operation Execution Workflow.md",
+    "_site/notes:/binexp/stack/basic-bof/index.html",
+    "_site/notes:/binexp/stack/Out-of-bounds/index.html",
+    "_site/notes:/binexp/stack/Format-String/index.html",
+    "_site/notes:/red-teaming/Red Team Infrastructure/index.html",
+    "_site/notes:/red-teaming/Red Team Attack Lifecycle/index.html",
+    "_site/notes:/red-teaming/Operation Execution Workflow/index.html",
+    "_site/notes:/red-teaming/Network Pivoting/index.html",
+    "_site/notes:/red-teaming/Introduction/index.html",
+    "_site/notes:/misc/OpSec/index.html",
+    "_site/notes:/binexp/stack/basic-bof",
     "_site/notes/binexp/heap/Introduction.md",
     "_site/notes/misc/Enterprise Network.md",
+    "_site/assets/images/tibaneC2.png",
+    "_site/assets/images/stack-before-overflow.jpg",
+    "_site/assets/images/split2.png",
     "_site/assets/img/favicons/mstile-150x150.png",
     "_site/assets/img/favicons/favicon-32x32.png",
     "_site/assets/img/favicons/favicon-16x16.png",
     "_site/assets/img/favicons/apple-touch-icon.png",
     "_site/assets/img/favicons/android-chrome-512x512.png",
     "_site/assets/img/favicons/android-chrome-192x192.png",
-    "_site/assets/images/tibaneC2.png",
-    "_site/assets/images/stack-before-overflow.jpg",
-    "_site/assets/images/split2.png",
     "_site/assets/images/split1.png",
     "_posts/2025-06-28-Databases.md",
     "_notes/red-teaming/Introduction.md",
     "_notes/red-teaming/Network Pivoting.md",
-    "_notes/red-teaming/Operation Execution Workflow.md",
-    "_notes/binexp/heap/Introduction.md",
     "_notes/binexp/Untitled.md"
   ]
 }
