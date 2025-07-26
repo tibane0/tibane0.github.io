@@ -170,10 +170,10 @@
   },
   "active": "e4e91cc0a59f0380",
   "lastOpenFiles": [
-    "_notes/binexp/stack/basic-bof.md",
+    "_notes/binexp/Syscalls/Seccomp.md",
     "_notes/binexp/heap/House-of-Force.md",
     "_notes/binexp/heap/Introduction.md",
-    "_notes/binexp/Syscalls/Seccomp.md",
+    "_notes/binexp/stack/basic-bof.md",
     "_notes/binexp/Syscalls",
     "2025-04-23.md",
     "_notes/binexp/stack/Out-of-bounds.md",
