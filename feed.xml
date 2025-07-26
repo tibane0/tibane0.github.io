@@ -1,0 +1,151 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tibane0.github.io/</id>
+  <title>Nkateko Tibane</title>
+  <subtitle>Portfolio and blog of an aspiring offensive security researcher. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-07-26T07:50:20+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://tibane0.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://tibane0.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://tibane0.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Binary Exploitation Docker Environment</title>
+    <link href="https://tibane0.github.io/post/Pwn-Environment-Lab/" rel="alternate" type="text/html" title="Binary Exploitation Docker Environment" />
+    <published>2025-07-23T00:00:00+02:00</published>
+  
+    <updated>2025-07-24T12:50:41+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Pwn-Environment-Lab/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Pwn-Environment-Lab/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="offsec-lab" />
+    
+    <category term="rev" />
+    
+  
+
+  <summary>Setting Up  Pwn Environment Lab with Docker  Reverse Engineering and binary exploitation require a well-configured environment with the right tools. Learning binary exploitation requires to learn on older environment which can be tedious to setup due to dependency conflicts, outdated packages, and compatibility issues.  In this blog we’ll walk through building a docker-based pwn environment tha...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Databases for hackers</title>
+    <link href="https://tibane0.github.io/post/Databases/" rel="alternate" type="text/html" title="Databases for hackers" />
+    <published>2025-06-28T00:00:00+02:00</published>
+  
+    <updated>2025-07-01T15:17:06+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Databases/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Databases/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="misc" />
+    
+    <category term="databases" />
+    
+  
+
+  <summary>Why Databases Are Important In Offensive Security  Databases get often overlooked by beginners in cybersecurity. Databases are often critical targets and play a huge role in organization’s IT infrastructure and a prime target for hackers. Here’s why:     Databases are high-value targets            Databases hold sensitive data. If compromised, can lead to severe financial, reputational, and ope...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Building a Comprehensive C2 Framework</title>
+    <link href="https://tibane0.github.io/post/C2-Framework/" rel="alternate" type="text/html" title="Building a Comprehensive C2 Framework" />
+    <published>2025-06-26T00:00:00+02:00</published>
+  
+    <updated>2025-06-26T00:00:00+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/C2-Framework/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/C2-Framework/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Red Team" />
+    
+  
+
+  <summary>C2 Framework  Advanced persistent threat (APT) groups and offensive security professionals rely on C2 (Command and Control) frameworks to remotely manage compromised systems. A C2 framework provides the architecture, tools, and workflows required to deliver payloads, maintain control, execute tasks, and exfiltrate data — all in a stealthy and modular way.    What is a C2 Framework?  A C2 framew...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Callme 64-bit Rop Emporium</title>
+    <link href="https://tibane0.github.io/post/Callme(x64)-Rop-Emporium/" rel="alternate" type="text/html" title="Callme 64-bit Rop Emporium" />
+    <published>2025-06-09T00:00:00+02:00</published>
+  
+    <updated>2025-06-20T14:56:19+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Callme(x64)-Rop-Emporium/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Callme(x64)-Rop-Emporium/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>Callme 64 bit Writeup  From challenge description    You must call the callme_one(), callme_two() and callme_three() functions in that order, each with the arguments 0xdeadbeef, 0xcafebabe, 0xd00df00d e.g. callme_one(0xdeadbeef, 0xcafebabe, 0xd00df00d) to print the flag. For the x86_64 binary double up those values, e.g. callme_one(0xdeadbeefdeadbeef, 0xcafebabecafebabe, 0xd00df00dd00df00d)    ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Offensive Security Lab</title>
+    <link href="https://tibane0.github.io/post/infosec-lab/" rel="alternate" type="text/html" title="Offensive Security Lab" />
+    <published>2025-05-21T00:00:00+02:00</published>
+  
+    <updated>2025-05-25T03:44:32+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/infosec-lab/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/infosec-lab/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="misc" />
+    
+    <category term="offsec-lab" />
+    
+  
+
+  <summary>Offensive Security Playground    As i dive more into offensive security I realised that I am going to need a Red Team lab that simulates a real-world enterprise environment. I’m excited to start building my ultimate cybersecurity lab environment, my playground for all things offensive and defensive security.  I designed this to be like a realistic network. This lab will help me practice and hon...</summary>
+
+  </entry>
+
+</feed>
+
+
