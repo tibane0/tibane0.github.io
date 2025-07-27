@@ -202,7 +202,7 @@ order: 3
 
 <!-- CTF Binary Exploitation -->
 <div class="project-card">
-  <img src="/assets/images/ctf_pwn.jpeg" alt="CTF Binary Exploitation" class="project-image">
+  <img src="/assets/images/ctf-pwn.jpeg" alt="CTF Binary Exploitation" class="project-image">
   
   <h3><a href="https://github.com/tibane0/ctf-pwn" target="_blank">CTF Binary Exploitation</a></h3>
   <p>Collection of solved CTF challenges covering fundamental to advanced binary exploitation techniques with detailed write-ups.</p>
