@@ -200,29 +200,58 @@ order: 3
   <a class="btn" href="https://github.com/tibane0/TibaneC2" target="_blank">View Project</a>
 </div>
 
-<!-- Exploit Development Project -->
+<!-- CTF Binary Exploitation -->
 <div class="project-card">
-  <img src="/assets/images/expdev.png" alt="Exploit Development" class="project-image">
+  <img src="/assets/images/ctf_pwn.jpeg" alt="CTF Binary Exploitation" class="project-image">
   
-  <h3><a href="https://github.com/tibane0/exploit-dev" target="_blank">Exploit Development Research</a></h3>
-  <p>Collection of binary exploitation techniques, vulnerability research, and proof-of-concept exploits for both CTF challenges and real-world software vulnerabilities.</p>
+  <h3><a href="https://github.com/tibane0/ctf-pwn" target="_blank">CTF Binary Exploitation</a></h3>
+  <p>Collection of solved CTF challenges covering fundamental to advanced binary exploitation techniques with detailed write-ups.</p>
 
-  <div class="feature-title">Research Focus</div>
+  <div class="feature-title">Techniques Covered</div>
   <ul>
-    <li><strong>Memory Corruption:</strong> Stack/heap overflows, use-after-free, type confusion</li>
-    <li><strong>Mitigation Bypasses:</strong> Techniques for defeating ASLR, DEP, Stack Canaries</li>
-    <strong>Kernel Exploitation:</strong> Driver vulnerabilities and privilege escalation vectors</li>
-    <li><strong>Modern Protections:</strong> Analysis of Control Flow Guard, CET, and other mitigations</li>
-    <li><strong>Tool Development:</strong> Custom fuzzers and exploit automation scripts</li>
+    <li><strong>Basic Exploits:</strong> Stack overflows, format strings, ret2libc</li>
+    <li><strong>Heap Exploitation:</strong> malloc internals, tcache poisoning, unlink attacks</li>
+    <li><strong>Advanced ROP:</strong> Stack pivoting, SIGROP, blind ROP</li>
+    <li><strong>Custom Tooling:</strong> Automated exploit templates and debugging helpers</li>
+    <li><strong>Challenge Categories:</strong> Reverse engineering, cryptography, sandbox escapes</li>
   </ul>
   
   <div class="tags">
-    <span class="tag">Binary Exploitation</span>
-    <span class="tag">Reverse Engineering</span>
-    <span class="tag">C/C++</span>
-    <span class="tag">Python</span>
+    <span class="tag">CTF Solutions</span>
     <span class="tag">Pwntools</span>
-    <span class="tag">CTF</span>
+    <span class="tag">ROP Chains</span>
+    <span class="tag">Heap Exploitation</span>
+    <span class="tag">Python</span>
+    <span class="tag">GDB</span>
+  </div>
+  <a class="btn" href="https://github.com/tibane0/ctf-pwn" target="_blank">View Challenges</a>
+</div>
+
+
+
+<!-- Real-World Exploit Development -->
+<div class="project-card">
+  <img src="/assets/images/expdev.png" alt="Real-World Exploit Development" class="project-image">
+  
+  <h3><a href="https://github.com/tibane0/exploit-dev" target="_blank">Real-World Exploit Research</a></h3>
+  <p>Analysis and proof-of-concept exploits for real-world vulnerabilities (CVEs) across operating systems, browsers, and software applications.</p>
+
+  <div class="feature-title">Research Focus</div>
+  <ul>
+    <li><strong>Vulnerability Analysis:</strong> Deep dives into published CVEs with PoC development</li>
+    <li><strong>Kernel Exploitation:</strong> Windows/Linux kernel privilege escalation research</li>
+    <li><strong>Browser Security:</strong> Chrome/Firefox renderer and sandbox escapes</li>
+    <li><strong>Mitigation Bypasses:</strong> Advanced techniques against modern protections (CFG, CET, etc.)</li>
+    <li><strong>Exploit Primitive Development:</strong> Reliable techniques for RCE and LPE</li>
+  </ul>
+  
+  <div class="tags">
+    <span class="tag">CVE Analysis</span>
+    <span class="tag">Kernel Exploitation</span>
+    <span class="tag">Browser Security</span>
+    <span class="tag">Mitigation Bypass</span>
+    <span class="tag">C/C++</span>
+    <span class="tag">Exploit Development</span>
   </div>
   <a class="btn" href="https://github.com/tibane0/exploit-dev" target="_blank">View Research</a>
 </div>

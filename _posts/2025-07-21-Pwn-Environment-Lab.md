@@ -95,21 +95,30 @@ RUN cd /tmp && \
 RUN git clone https://github.com/radareorg/radare2.git /opt/radare2 && \
     cd /opt/radare2 && ./sys/install.sh && cd -
 
-        # Create user
+RUN curl -s -o checksec https://raw.githubusercontent.com/slimm609/checksec.sh/${CHECKSEC_STABLE}/checksec \
+        && chmod +x checksec && \
+        mv checksec /usr/local/bin/ 
+
+# Create user
 RUN useradd -m hacker && \
-chown -R hacker:hacker /home/hacker && chmod 644 /home/hacker/.gdbinit*
+    echo "hacker ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+    
 
 
 USER hacker
 
 # Install GEF
 RUN wget -q -O /home/hacker/.gdbinit-gef.py https://gef.blah.cat/py && \
-    echo "source /home/hacker/.gdbinit-gef.py" >> /home/hacker/.gdbinit
+    echo "source /home/hacker/.gdbinit-gef.py" >> /home/hacker/.gdbinit && \
+    chown -R hacker:hacker /home/hacker && chmod 644 /home/hacker/.gdbinit*
 
 # Install pwntools and ROPgadget
 RUN pip3 install --no-cache-dir pwntools ROPgadget
 
 WORKDIR /home/hacker/workspace
+
+RUN curl -sSLo exploit_template.py "https://github.com/tibane0/ctf-pwn/blob/main/exploit_template.py" \
+    && chmod +x exploit_template.py
 
 CMD ["/bin/bash"]
 ```
