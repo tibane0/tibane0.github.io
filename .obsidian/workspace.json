@@ -11,10 +11,14 @@
             "id": "9bb1df35ca6872e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-07-28-Global_varibale_overwrite.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-07-28-Global_varibale_overwrite"
             }
           }
         ]
