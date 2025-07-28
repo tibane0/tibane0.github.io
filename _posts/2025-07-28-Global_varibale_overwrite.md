@@ -1,8 +1,9 @@
 ---
 layout: post
 title: " Buffer Overflow with Global Variable Control"
-date: 2025-04-23
+date: 2025-07-28
 categories:
+  - pwn
 ---
 # Exploit Write-up: Buffer Overflow with Global Variable Control
 
@@ -104,7 +105,7 @@ payload = flat(
 )
 ```
 
-[Full Exploit Script](#)
+[Full Exploit Script](https://github.com/tibane0/ctf-pwn/blob/main/hackucf/stack0_pt2/xlp.py)
 
 ---
 
