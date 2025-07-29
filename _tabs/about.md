@@ -159,58 +159,55 @@ order: 2
 
 ## Currently Pursuing
 
-
 <div class="cert-blocks">
   <div class="cert-card">
+    <img src="/assets/images/cert/crta.png" alt="CRTA" class="cert-img">
     <h3>CRTA</h3>
     <p><a href="https://cyberwarfare.live/product/red-team-analyst-crta/" target="_blank">Certified Red Team Analyst</a></p>
     <p><strong>Status:</strong> Currently Pursuing</p>
   </div>
 </div>
 
-
-
 ---
 
 ## Future Goals
 
 <div class="cert-blocks">
-
-<div class="cert-blocks">
   <div class="cert-card">
+    <img src="/assets/images/cert/oscp.png" alt="OSCP" class="cert-img">
     <h3>OSCP</h3>
     <p>Offensive Security Certified Professional</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
 
-
   <div class="cert-card">
+    <img src="/assets/images/cert/crto.jpeg" alt="CRTO" class="cert-img">
     <h3>CRTO</h3>
     <p>Certified Red Team Operator</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
 
   <div class="cert-card">
+    <img src="/assets/images/cert/pnpt.jpeg" alt="PNPT" class="cert-img">
     <h3>PNPT</h3>
     <p>Practical Network Penetration Tester</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
 
   <div class="cert-card">
+    <img src="/assets/images/cert/osed.jpeg" alt="OSED" class="cert-img">
     <h3>OSED</h3>
     <p>Offensive Security Exploit Developer</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
 
   <div class="cert-card">
+    <img src="/assets/images/cert/ejpt.jpeg" alt="eJPT" class="cert-img">
     <h3>eJPT</h3>
     <p>INE's Junior Penetration Tester</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
-  
 </div>
-
-
 
 <style>
 .cert-blocks {
@@ -230,6 +227,7 @@ order: 2
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
+  text-align: center;
 }
 
 .cert-card:hover {
@@ -254,7 +252,15 @@ order: 2
 .cert-card a:hover {
   text-decoration: underline;
 }
+
+.cert-img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
 </style>
+
 
 
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
