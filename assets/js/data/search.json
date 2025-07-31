@@ -1,0 +1,92 @@
+[
+  {
+    "title": " Buffer Overflow with Global Variable Control",
+    "url": "/post/Global_varibale_overwrite/",
+    "categories": "pwn",
+    "tags": "",
+    "date": "2025-07-28 00:00:00 +0200",
+    "content": "Exploit Write-up: Buffer Overflow with Global Variable Control  Challenge  Overview  In this challenge, we are given a C program that contains a buffer overflow vulnerability in the func() function..."
+  },
+  {
+    "title": "Binary Exploitation Docker Environment",
+    "url": "/post/Pwn-Environment-Lab/",
+    "categories": "pwn, offsec-lab, rev",
+    "tags": "",
+    "date": "2025-07-23 00:00:00 +0200",
+    "content": "Setting Up  Pwn Environment Lab with Docker  Reverse Engineering and binary exploitation require a well-configured environment with the right tools. Learning binary exploitation requires to learn o..."
+  },
+  {
+    "title": "Databases for hackers",
+    "url": "/post/Databases/",
+    "categories": "misc, databases",
+    "tags": "",
+    "date": "2025-06-28 00:00:00 +0200",
+    "content": "Why Databases Are Important In Offensive Security  Databases get often overlooked by beginners in cybersecurity. Databases are often critical targets and play a huge role in organization’s IT infra..."
+  },
+  {
+    "title": "Building a Comprehensive C2 Framework",
+    "url": "/post/C2-Framework/",
+    "categories": "Red Team",
+    "tags": "",
+    "date": "2025-06-26 00:00:00 +0200",
+    "content": "C2 Framework  Advanced persistent threat (APT) groups and offensive security professionals rely on C2 (Command and Control) frameworks to remotely manage compromised systems. A C2 framework provide..."
+  },
+  {
+    "title": "Callme 64-bit Rop Emporium",
+    "url": "/post/Callme(x64)-Rop-Emporium/",
+    "categories": "pwn",
+    "tags": "",
+    "date": "2025-06-09 00:00:00 +0200",
+    "content": "Callme 64 bit Writeup  From challenge description    You must call the callme_one(), callme_two() and callme_three() functions in that order, each with the arguments 0xdeadbeef, 0xcafebabe, 0xd00df..."
+  },
+  {
+    "title": "Offensive Security Lab",
+    "url": "/post/infosec-lab/",
+    "categories": "misc, offsec-lab",
+    "tags": "lab",
+    "date": "2025-05-21 00:00:00 +0200",
+    "content": "Offensive Security Playground    As i dive more into offensive security I realised that I am going to need a Red Team lab that simulates a real-world enterprise environment. I’m excited to start bu..."
+  },
+  {
+    "title": "Basic Command and Control",
+    "url": "/post/basic-c2/",
+    "categories": "misc",
+    "tags": "c2, red-team",
+    "date": "2025-05-15 00:00:00 +0200",
+    "content": "Building Basic Command and Control Server  In order to understand how c2 servers work, I decided to build my on c2 in order to understand the internals of command and control servers. After a few w..."
+  },
+  {
+    "title": "Rop Emporium Split 64 bit (x64)",
+    "url": "/post/split-rop-emporium/",
+    "categories": "pwn",
+    "tags": "ctf",
+    "date": "2025-04-29 00:00:00 +0200",
+    "content": "Rop Emporium Split  hint I’ll let you in on a secret: that useful string &quot;/bin/cat flag.txt&quot; is still present in this binary, as is a call to system(). It’s just a case of finding them and chaining..."
+  },
+  {
+    "title": "UMDCTF Gambling CTF WriteUp",
+    "url": "/post/Gambling/",
+    "categories": "pwn",
+    "tags": "",
+    "date": "2025-04-28 00:00:00 +0200",
+    "content": "UMDCTF Gambling pwn challenge    About binary  pwn checksec gambling [*] &#39;/home/hacker/REPO/binexp/comp/umdctf/gambling/gambling&#39;     Arch:     i386-32-little     RELRO:    Partial RELRO     Stack:..."
+  },
+  {
+    "title": "Protostar Stack",
+    "url": "/post/Protostar-Stack/",
+    "categories": "pwn",
+    "tags": "",
+    "date": "2025-04-23 00:00:00 +0200",
+    "content": "Protostar Stack Writeups  Stack 0  GOAL : Modify a variable  0x08048405 &amp;lt;+17&amp;gt;:	lea    eax,[esp+0x1c] 0x08048409 &amp;lt;+21&amp;gt;:	mov    DWORD PTR [esp],eax 0x0804840c &amp;lt;+24&amp;gt;:	call   0x804830..."
+  },
+  {
+    "title": "Rop Emporium Ret2win 32 bit",
+    "url": "/post/ret-2-win/",
+    "categories": "pwn",
+    "tags": "",
+    "date": "2025-02-22 00:00:00 +0200",
+    "content": "Get Offset to EIP  ragg2 -P 100 -r AAABAACAADAAEAAFAAGAAHAAIAAJAAKAALAAMAANAAOAAPAAQAARAASAATAAUAAVAAWAAXAAYAAZAAaAAbAAcAAdAAeAAfAAgAAh   r2 ret2win32 [0x08048430]&amp;gt; doo  File dbg:///home/hacker/..."
+  }
+  
+]
+
