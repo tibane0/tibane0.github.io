@@ -1,3 +1,11 @@
+---
+layout: default
+title: Stack Pivoting
+tags:
+  - pwn
+---
+
+
 # Stack Pivoting
 
 ## Overview

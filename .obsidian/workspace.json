@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_tabs/about.md",
+                "file": "_notes/red-teaming/LAB SETUP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "LAB SETUP"
             }
           }
         ]
@@ -170,6 +170,16 @@
   },
   "active": "9bb1df35ca6872e9",
   "lastOpenFiles": [
+    "_notes/red-teaming/Operation Execution Workflow.md",
+    "_notes/red-teaming/LAB SETUP.md",
+    "_notes/red-teaming/Introduction.md",
+    "_notes/red-teaming/Network Pivoting.md",
+    "_notes/red-teaming/Red Team Infrastructure.md",
+    "_notes/red-teaming/Red Team Attack Lifecycle.md",
+    "_notes/binexp/stack/ROP/Stack Pivoting.md",
+    "_notes/binexp/stack/ROP/ret2csu.md",
+    "_notes/binexp/stack/basic-bof.md",
+    "_tabs/about.md",
     "_site/assets/images/cert/ejpt.jpeg",
     "assets/images/cert/ejpt.jpeg",
     "assets/images/cert/ejpt.jpeg.crdownload",
@@ -185,7 +195,6 @@
     "_site/assets/images/cert/oscp.png",
     "assets/images/cert/oscp.png",
     "assets/images/cert/oscp.png.crdownload",
-    "_site/assets/images/cert/crta.png",
     "_site/assets/images/cert",
     "assets/images/cert/crta.png.crdownload",
     "assets/images/cert",
@@ -193,8 +202,6 @@
     "_site/notes:/binexp/stack/Out-of-bounds/index.html",
     "_site/notes/binexp/stack/ROP/Stack Pivoting.md",
     "_site/notes/misc/Enterprise Network.md",
-    "_notes/binexp/stack/ROP/Stack Pivoting.md",
-    "_notes/binexp/stack/basic-bof.md",
     "_notes/binexp/stack/Out-of-bounds.md",
     "_posts/2025-07-21-Pwn-Environment-Lab.md",
     "_posts/2025-07-28-Global_varibale_overwrite.md",
@@ -206,14 +213,8 @@
     "_site/2025-04-23.md",
     "_notes/binexp/Syscalls/Seccomp.md",
     "_notes/binexp/heap/Introduction.md",
-    "_tabs/about.md",
     "_tabs/notes.md",
     "_posts/2025-04-28-Gambling.md",
-    "_notes/red-teaming/Operation Execution Workflow.md",
-    "_site/notes/binexp/heap/Introduction.md",
-    "_posts/2025-06-28-Databases.md",
-    "_notes/red-teaming/Introduction.md",
-    "_notes/red-teaming/Network Pivoting.md",
-    "_notes/binexp/Untitled.md"
+    "_site/notes/binexp/heap/Introduction.md"
   ]
 }

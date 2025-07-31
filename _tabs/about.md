@@ -151,13 +151,13 @@ order: 2
 
 
 ## Certifications  
-## Completed
+### Completed
 
-### N/A
+#### N/A
 
 ---
 
-## Currently Pursuing
+### Currently Pursuing
 
 <div class="cert-blocks">
   <div class="cert-card">
@@ -170,7 +170,7 @@ order: 2
 
 ---
 
-## Future Goals
+### Future Goals
 
 <div class="cert-blocks">
   <div class="cert-card">
@@ -261,7 +261,7 @@ order: 2
 }
 </style>
 
-
+---
 
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
 
