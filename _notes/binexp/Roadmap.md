@@ -1,7 +1,8 @@
 ---
 layout: default
-title: roadmap to Red Teaming
-tags: ["red-team"]
+title: roadmap for binexp
+tags:
+  - pwn
 ---
 
 # Binary Exploitaion Roadmap
