@@ -262,7 +262,73 @@ order: 2
 </style>
 
 ---
+## Learning Paths / Training
 
+<style>
+.trainings-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.training-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: var(--training-bg, #fdfcff);
+  border: 2px solid #4f46e5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.training-card:hover {
+  transform: scale(1.02);
+  border-color: #4338ca;
+}
+
+.training-card h3 {
+  color: #4f46e5;
+  margin-top: 0;
+}
+
+.training-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.training-card a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.training-card a:hover {
+  text-decoration: underline;
+}
+
+.training-img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  border-radius: 6px;
+}
+</style>
+
+
+<div class="trainings-blocks">
+
+
+</div>
+
+
+
+---
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
 
 

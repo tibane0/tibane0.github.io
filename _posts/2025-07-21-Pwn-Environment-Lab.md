@@ -194,13 +194,6 @@ docker run -it --rm --privileged --cap-add=SYS_PTRACE \
 
 ```
 
-```sh
-docker run -it --rm --privileged --cap-add=SYS_PTRACE \
-  --security-opt seccomp=unconfined \
-  -v "$(pwd)":/home/hacker/workspace \
-  pwn-env bash -c 'cp /usr/local/bin/exploit_template.py /home/hacker/workspace/ && exec bash'
-```
-
 ## Conclusion
 This Docker-based pwn environment provides a **clean, reproducible setup** for binary exploitation and reverse engineering. By using **Ubuntu 16.04 + Python 3.9**, we maintain compatibility with older challenges while leveraging modern tools like GEF and pwntools.
 

@@ -82,10 +82,9 @@ The top chunk size field should have the highest size possible (0xffffffff),
 
 
 ## Resources 
-https://gbmaster.wordpress.com/2015/06/28/x86-exploitation-101-house-of-force-jedi-overflow/
-
-https://ctf-wiki.mahaloz.re/pwn/linux/glibc-heap/house_of_force/
-
+- [https://gbmaster.wordpress.com/2015/06/28/x86-exploitation-101-house-of-force-jedi-overflow/](https://gbmaster.wordpress.com/2015/06/28/x86-exploitation-101-house-of-force-jedi-overflow/)
+- [https://ctf-wiki.mahaloz.re/pwn/linux/glibc-heap/house_of_force/](https://gbmaster.wordpress.com/2015/06/28/x86-exploitation-101-house-of-force-jedi-overflow/)
+- 
 https://ctf-wiki.mahaloz.re/pwn/
 
 https://www.bordergate.co.uk/heap-exploitation-the-house-of-force/
