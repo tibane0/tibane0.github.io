@@ -1,4 +1,9 @@
-
+---
+layout: default
+title: House-of-mind
+tags:
+  - pwn
+---
 
 # House of mind
 This technique works by tricking the `glibc malloc` to use a fake arena. The fake arena is constructed in such a way that unsorted bins's `fd` contains the address of a `GOT` entry of free. Thus now when the program free's a chunk the `GOT` entry of free is overwritten. After the successful `GOT` overwrite, now when free is called, the address that overwrites the `GOT` entry will be executed.

@@ -16,6 +16,6 @@ TOCTOU race conditions are common in Unix between operations on the file syst
 
 --- 
 ## Resources
-[Samclass on Race conditions](https://samsclass.info/127/proj/ED210.htm)
-[pwn college](https://pwn.college/system-security/race-conditions/)
+- [Samclass on Race conditions](https://samsclass.info/127/proj/ED210.htm) 
+- [pwn college](https://pwn.college/system-security/race-conditions/)
 

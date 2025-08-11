@@ -1,4 +1,9 @@
-
+---
+layout: default
+title: Intro to Heap Internals
+tags:
+  - pwn
+---
 
 # Heap
 The heap is an area of memory that can be dynamically allocated. This means the program can request and release memory from the heap whenever it requires. Heap memory is global (it can be accessed and modified from anywhere within a program) and this is accomplished using pointers to reference dynamic allocated memory.
@@ -55,8 +60,31 @@ The top chunk is the topmost available chunk (the one bordering the end of avail
 `Malloc` keeps track of the remaining memory in a top chunk using it's size field, the `prev_inuse` bit of which is always set. A top chunk always contains enough memory to allocate a minimum-sized chunk.
 
 #### Bins
+Free chunks are stored in various lists (bins) based on size and history, so that the library can quickly find suitable chunks to satisfy allocation requests. 
+##### Fast bins
+- Single linked list (LIFO)
+- There are 10 fast bins.
 
+Each bin has chunks of the same size (including metadata[`prev_size`, size]).
+10 bins each have chunks of sizes:  16, 24, 32, 40, 48, 56, 64, 72, 80 and 88. 
 
+##### Unsorted bins
+- There is only 1 unsorted bin.
+
+Small and large chunks, when freed, end up in this bin. The purpose of his bin is to ac as a cache layer to speed p allocation and deallocation requests.
+
+##### Small bins
+- There are 62 small bins. 
+- Doubly linked list. (FIFO)
+
+Each bin has chunks of the same size. 
+62 bins each have chunks of sizes: 16, 24, ..., 504 bytes.
+
+##### Large bins
+- There are 63 large bins.
+- Doubly linked list. (FIFO)
+
+holds large chunks with sizes greater 512.
 
 ### `malloc_state`
 This is a structure that represents the header details of an arena. 
