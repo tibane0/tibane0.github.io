@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_notes/binexp/heap/House-of-mind.md",
+                "file": "_notes/binexp/Race conditions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "House-of-mind"
+              "title": "Race conditions"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/binexp/heap/House-of-mind.md",
+                "file": "_notes/binexp/Race conditions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of House-of-mind"
+              "title": "Outline of Race conditions"
             }
           }
         ],
@@ -157,10 +157,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -171,8 +172,15 @@
   },
   "active": "d6f2e17dca240290",
   "lastOpenFiles": [
+    "_notes/low-level-dev",
+    "_notes/binexp/heap/Use-after-free.md",
     "_notes/binexp/heap/Introduction to the Heap.md",
     "_notes/binexp/Race conditions.md",
+    "_notes/binexp/stack/ROP/Stack Pivoting.md",
+    "_notes/red-teaming/Internal Network/Internal network attack cycle.md",
+    "_notes/red-teaming/Untitled.md",
+    "_notes/red-teaming/External Network",
+    "_notes/red-teaming/Internal Network",
     "_notes/binexp/heap/House-of-mind.md",
     "_notes/binexp/heap/House-of-Force.md",
     "_notes/web-development/API Development.md",
@@ -192,12 +200,7 @@
     "_notes/binexp/Shellcoding.md",
     "_notes/binexp/stack/Integer Overflow and Underflow.md",
     "_notes/binexp/stack/Format-String.md",
-    "_notes/binexp/stack/basic-bof.md",
-    "_notes/binexp/stack/ROP/Stack Pivoting.md",
-    "_notes/binexp/heap/Use-after-free.md",
-    "_posts/2025-08-01-Mem-Test.md",
     "_notes/web-development",
-    "_notes/red-teaming/Introduction.md",
     "_site/assets/images/cert/ejpt.jpeg",
     "assets/images/cert/ejpt.jpeg",
     "assets/images/cert/ejpt.jpeg.crdownload",
@@ -214,8 +217,6 @@
     "assets/images/cert/oscp.png",
     "assets/images/cert/oscp.png.crdownload",
     "_site/assets/images/cert",
-    "assets/images/cert/crta.png.crdownload",
-    "assets/images/cert",
-    "_site/notes:/binexp/stack/basic-bof/index.html"
+    "assets/images/cert/crta.png.crdownload"
   ]
 }

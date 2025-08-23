@@ -12,14 +12,20 @@ Much like the name suggests, this technique involves us _using data once it is f
 - Crashes
 - arbitrary code execution
 - information disclosure
-###  Typical `UAF` Flow
+##  Typical `UAF` Flow
 1. Allocate memory (`malloc`, `new`)
 2. Use it normally
 3. Free it (`free`, `delete`)
 4. Use it again! 
 
 
-### HOW `UAF` is exploited
+## HOW `UAF` is exploited
 - reallocated the freed chunk with attacker-controlled data
 - overwrite function pointers, vtables, hooks, etc
 - hijack execution flow
+
+
+---
+## `UAF` to Code Execution
+
+

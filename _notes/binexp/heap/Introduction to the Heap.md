@@ -42,7 +42,6 @@ void data; // mchunk_size
 }
 ```
 
-
 #### Free chunks
 Free chunks maintain themselves in a circular doubly linked list.
 ```c

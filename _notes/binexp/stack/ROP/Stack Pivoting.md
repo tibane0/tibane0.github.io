@@ -18,6 +18,7 @@ To accomplish this technique we take control of the `RSP` register and fake the 
 - `pop rsp` gadget : simplest, but least likely to exist gadget.
 - `xchg <reg>, rsp`: use this gadget to swap the values with ones in `RSP`. Requires 16 bytes of stack space after saved return pointer
 	- `pop <reg>; <reg value>; xchg <reg>, rsp`
+
 - `leave; ret` 
 	- requires only 8 bytes
 	- every function (except main) is ended with a `leave; ret` gadget.
