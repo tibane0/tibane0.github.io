@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: Enterprise Network
+tags:
+---
 # Enterprise Network
 Enterprise network consists of various role-assigned servers
 which include:

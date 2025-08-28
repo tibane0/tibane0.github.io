@@ -1,6 +1,5 @@
 ---
-# the default layout is 'page'
-title: About me
+title: About Me
 icon: fas fa-info-circle
 order: 2
 ---
@@ -102,6 +101,7 @@ order: 2
     <div class="roles">
       <p><code>$ what-do-i-do</code></p>
       <p>&gt; Exploit Development</p>
+       <p>&gt; Reverse Engineering</p>
       <p>&gt; Red Teaming</p>
       <p>&gt; Software Development</p>
     </div>
@@ -113,28 +113,21 @@ order: 2
   <div class="profile-right">
     Hello 
 
-    I'm Nkateko, a 20-year-old cybersecurity enthusiast focused on real-world offensive security.
+    I'm Nkateko,a, cybersecurity enthusiast focused on real-world offensive security.
     <p>
     This blog is my personal sandbox, a space where I will explore offensive security and share my progress, insights and discoveries as I document my journey. 
     </p>
-    Im currently building a solid foundation in offensive security. 
-    <ul>
-    <li>Red Teaming</li>
-    <li>Exploit Development [binary-exploitation]</li>
-    <li>Offensive Tool Development</li>
-    <li>Software Development</li>
-    </ul>
     Here on this blog, you can expect to find walkthroughs on binary exploitation challanges and real world exploits, walkthroughs of vulnerable machines, deep dives on offensive tools and applying my software development skills to security.
         <div class="skills">
       <h4>My Toolkit Includes:</h4>
       <span>C/C++</span>
       <span>Python</span>
+      <span>Assembly</span>
       <span>PHP</span>
-      <span>Penetration Testing</span>
+      <span>Software Development</span>
       <span>Reverse Engineering</span>
       <span>Exploit Development</span>
       <span>Red Teaming</span>
-      
     </div>
 
     <div class="disclaimer">
@@ -151,6 +144,7 @@ order: 2
 
 
 ## Certifications  
+
 ### Completed
 
 #### N/A
@@ -277,21 +271,20 @@ order: 2
   flex: 1 1 250px;
   max-width: 300px;
   padding: 1rem;
-  background-color: var(--training-bg, #fdfcff);
-  border: 2px solid #4f46e5;
+  border: 2px solid rgb(211, 47, 211);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgb(99, 5, 94);
   transition: transform 0.2s ease;
   text-align: center;
 }
 
 .training-card:hover {
   transform: scale(1.02);
-  border-color: #4338ca;
+  border-color: #9333ea;
 }
 
 .training-card h3 {
-  color: #4f46e5;
+  color: #b266ff; /* Fixed syntax error (removed extra colon) */
   margin-top: 0;
 }
 
@@ -320,15 +313,39 @@ order: 2
 }
 </style>
 
-
 <div class="trainings-blocks">
+	  <div class="training-card">
+    <img src="/assets/images/endpoint_sec.png" class="training-img" alt="Course Icon" />
+    <h3>Endpoint Security </h3>
+    <p>Cisco Networking Academy</p>
+    <a href="https://www.credly.com/badges/04258199-4029-4933-80ed-2de980d43fe9/public_url" target="_blank">view badge</a>
+  </div>
 
+
+  <div class="training-card">
+    <img src="/assets/images/net_basics.png" class="training-img" alt="Course Icon" />
+    <h3>Networking Basics</h3>
+    <p>Cisco Networking Academy</p>
+    <a href="#">view badge</a>
+  </div>
+    
+  <div class="training-card">
+    <img src="/assets/images/ethical_hacker.png" class="training-img" alt="Course Icon" />
+    <h3>Ethical hacker</h3>
+    <p>Cisco Networking Academy</p>
+    <a href="https://www.credly.com/badges/102b3947-3c16-4d09-afa2-eb067efa50ad/public_url">view badge</a>
+  </div>
+
+  <div class="training-card">
+    <img src="/assets/images/netcad.png" class="training-img" alt="Course Icon" />
+    <h3>Introduction to Cybersecurity</h3>
+    <p>Cisco Networking Academy</p>
+    <a href="#">view badge</a>
+  </div>
 
 </div>
-
-
-
 ---
+
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
 
 

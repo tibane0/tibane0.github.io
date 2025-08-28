@@ -5,11 +5,15 @@ tags:
   - pwn
 ---
 # Race Condition
+A software bug that occurs when the outcome of a program depends on the unpredictable order in which threads or processes, access  and modify share resources
+
 A race condition is where the system's substantive behavior is dependent on the sequence of timing of other uncontrollable events
 
 **Security Vulnerability Race condition:** when the system's substantive behavior is dependent on the sequence or timing of attacker-controllable events
 
 Attackers exploit race conditions  by changing the state that a program is running in while the program assumes that the state has not been changed
+
+
 ## Root causes for race conditions
 - Shared resources
 	- Volatile memory (DRAM)

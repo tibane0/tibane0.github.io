@@ -168,6 +168,12 @@ order: 3
   .project-grid {
     grid-template-columns: 1fr;
   }
+
+.star-badge img {
+  height: 22px;
+  margin-top: 6px;
+}
+
 }
 </style>
 
@@ -229,7 +235,7 @@ order: 3
 
 
 
-<!-- Real-World Exploit Development -->
+<!-- Real-World Exploit Development
 <div class="project-card">
   <img src="/assets/images/expdev.png" alt="Real-World Exploit Development" class="project-image">
   
@@ -257,3 +263,4 @@ order: 3
 </div>
 
 </div>
+ -->

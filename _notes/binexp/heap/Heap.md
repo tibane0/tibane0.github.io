@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Intro to Heap Internals
+title: Heap
 tags:
   - pwn
 ---
-
 # Heap
 The heap is an area of memory that can be dynamically allocated. This means the program can request and release memory from the heap whenever it requires. Heap memory is global (it can be accessed and modified from anywhere within a program) and this is accomplished using pointers to reference dynamic allocated memory.
 
@@ -37,6 +36,7 @@ typedef struct malloc_chunk* mchunkptr;
 
 ```c
 struct malloc_allocated_chunk {
+INTERNAL_SIZE_T      mchunk_prev_size;
 INTERNAL_SIZE_T      mchunk_size;  
 void data; // mchunk_size
 }

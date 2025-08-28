@@ -1,4 +1,9 @@
-
+---
+layout: default
+title: Internal network attack cycle
+tags:
+  - red-team
+---
 # Attack cycle
 1. Recon
 2. domain enum
