@@ -1,0 +1,149 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tibane0.github.io/</id>
+  <title>Nkateko Tibane</title>
+  <subtitle>Portfolio and blog of an aspiring offensive security researcher. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-08-28T09:56:28+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://tibane0.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://tibane0.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://tibane0.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Mem-Test writeup</title>
+    <link href="https://tibane0.github.io/post/Mem-Test/" rel="alternate" type="text/html" title="Mem-Test writeup" />
+    <published>2025-08-01T00:00:00+02:00</published>
+  
+    <updated>2025-08-01T00:00:00+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Mem-Test/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Mem-Test/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>Mem-Test  Source code summary  The program has a global variable called hint  const char* hint = &amp;quot;//bin/sh&amp;quot;;   Vulnerability  void mem_test(char* random) { 	char buff[11]; 	memset(buff, &amp;#39;\0&amp;#39;, sizeof(buff)); 	 	printf(&amp;quot;\nI know that mine is fine...see? : &amp;quot;); 	printf(&amp;quot;%p \n&amp;quot;, hint + 1); 	 	puts(&amp;quot;Let&amp;#39;s see how good your memory is...\n&amp;quot;); 	printf(&amp;quot;&amp;amp;gt; &amp;quot;); 	scanf(&amp;quot;%s&amp;quot;, buff); 	 	if(strncmp(buff, ra...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title> Buffer Overflow with Global Variable Control</title>
+    <link href="https://tibane0.github.io/post/Global_varibale_overwrite/" rel="alternate" type="text/html" title=" Buffer Overflow with Global Variable Control" />
+    <published>2025-07-28T00:00:00+02:00</published>
+  
+    <updated>2025-07-28T15:51:51+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Global_varibale_overwrite/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Global_varibale_overwrite/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>Exploit Write-up: Buffer Overflow with Global Variable Control  Challenge  Overview  In this challenge, we are given a C program that contains a buffer overflow vulnerability in the func() function. The goal is to exploit this vulnerability to print the contents of the correct flag file, flag2.txt, even though the binary is hardcoded to open flag1.txt.    Source Code Summary  static const char*...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Binary Exploitation Docker Environment</title>
+    <link href="https://tibane0.github.io/post/Pwn-Environment-Lab/" rel="alternate" type="text/html" title="Binary Exploitation Docker Environment" />
+    <published>2025-07-23T00:00:00+02:00</published>
+  
+    <updated>2025-08-08T19:13:59+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Pwn-Environment-Lab/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Pwn-Environment-Lab/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="offsec-lab" />
+    
+    <category term="rev" />
+    
+  
+
+  <summary>Setting Up  Pwn Environment Lab with Docker  Reverse Engineering and binary exploitation require a well-configured environment with the right tools. Learning binary exploitation requires to learn on older environment which can be tedious to setup due to dependency conflicts, outdated packages, and compatibility issues.  In this blog we’ll walk through building a docker-based pwn environment tha...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Databases for hackers</title>
+    <link href="https://tibane0.github.io/post/Databases/" rel="alternate" type="text/html" title="Databases for hackers" />
+    <published>2025-06-28T00:00:00+02:00</published>
+  
+    <updated>2025-07-01T15:17:06+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Databases/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Databases/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="misc" />
+    
+    <category term="databases" />
+    
+  
+
+  <summary>Why Databases Are Important In Offensive Security  Databases get often overlooked by beginners in cybersecurity. Databases are often critical targets and play a huge role in organization’s IT infrastructure and a prime target for hackers. Here’s why:     Databases are high-value targets            Databases hold sensitive data. If compromised, can lead to severe financial, reputational, and ope...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Building a Comprehensive C2 Framework</title>
+    <link href="https://tibane0.github.io/post/C2-Framework/" rel="alternate" type="text/html" title="Building a Comprehensive C2 Framework" />
+    <published>2025-06-26T00:00:00+02:00</published>
+  
+    <updated>2025-06-26T00:00:00+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/C2-Framework/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/C2-Framework/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Red Team" />
+    
+  
+
+  <summary>C2 Framework  Advanced persistent threat (APT) groups and offensive security professionals rely on C2 (Command and Control) frameworks to remotely manage compromised systems. A C2 framework provides the architecture, tools, and workflows required to deliver payloads, maintain control, execute tasks, and exfiltrate data — all in a stealthy and modular way.    What is a C2 Framework?  A C2 framew...</summary>
+
+  </entry>
+
+</feed>
+
+
