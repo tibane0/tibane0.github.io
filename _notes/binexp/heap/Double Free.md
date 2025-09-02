@@ -87,9 +87,13 @@ struct malloc_chunk* bk; // prev free chunk in list
 ```
 
 So when we write into the use data of `c` we are writing into the `fd` of `a` at the same time, and this means we control where the next chunks gets allocated.
-
-
-
+### Exploiting 
+#### steps
+1. allocate 2 ptrs
+2. free ptr a, then b, then a again
+3. allocate ptr a (with fake metadata (addr))
+4. allocate 2 chunks a, b
+5. allocate 1 more (overwrite)
 
 ## User data corruption
 
