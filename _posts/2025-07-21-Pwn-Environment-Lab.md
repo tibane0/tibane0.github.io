@@ -189,7 +189,7 @@ docker build -t pwn-env:latest .
 ```sh
 docker run -it --rm --privileged --cap-add=SYS_PTRACE \
   --security-opt seccomp=unconfined \
-  -v "$(pwd)":/home/hacker/workspace \
+  -v "$(pwd)":/home/pwn/workspace \
   pwn-env bash -c 'cp /usr/local/bin/exploit_template.py /home/hacker/workspace/ && exec bash'
 
 ```

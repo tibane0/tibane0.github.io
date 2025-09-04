@@ -5,16 +5,95 @@ tags:
   - pwn
   - heap
 ---
+# Unlink Exploit
 
 Unlinking for the heap is the processes of removing free chunks from a bin.
+write primitive (write-what-where)
+
+## Goal
+- Corrupt fd and bk of chunk
+	- `fd` : where
+	- `bk` : what
+### Requirements
+- control over `fd` and `bk` pointers in a free bin linked list:
+	- corrupt `fd` and `bk` pointers of a free chunk
+	- fake chunk in linked list
+- Known locations to write to (leak)
+- a call to free on the adjacent chunk.
 
 ## Steps
 1. setup 2 adjacent chunks of smallbins
-2. build a fake_chunk at start of chunk1-> and it should overflow into chunk2 metadata so can set `prev_size` and `prev_inuse` bit
+2. build a fake_chunk at start of chunk1 and it should overflow into chunk2 metadata so can set `prev_size` and `prev_inuse` bit
+	- The size of fake chunk should be equal to `prev_size` field of the next chunk. Size must be `chunk2 (from data) - chunk1 `
+	- `fd` and `bk` of fake chunk should  be 
+		- `fd` :WHERE
+		- `bk` : WHAT
+```c
+p->bk = addr - 0x18
+p->fd = addr - 0x10
+```
 3. Enter fake chunk in chunk1
 4. Trigger the unlink by freeing chunk 2
 5. overwrite chunk1 data with target address
 
+```c
+struct fake_chunk {
+INTERNAL_SIZE_T      mchunk_prev_size; // + 0x00
+INTERNAL_SIZE_T      mchunk_size; // + 0x8  
+struct malloc_chunk* fd; // + 0x10 |
+struct malloc_chunk* bk; // + 0x18	|aw
+}
+```
+
+## `Unlink` Macro
+
+easier to read code 
+
+```c
+#define unlink(Current, Prev, Next) {
+	Next = Current->fd;
+	Prev = Current->bk;
+	Next->bk = Prev;
+	Prev->fd = Next;
+}
+```
+
+`prev -> current -> next`
+![pic1](/assets/images/unlink_1.png)
+
+`prev -> current -> next`
+![Pic2](/assets/images/unlink_2.png)
+
+
+Since we control `fd` and `bk` we have arbitrary write
+
+```c
+#define unlink(Current, Where, What) {
+	Where = Current->fd; // Next | FD
+	What = Current->bk; // Prev | BK
+	where->bk = what; // next = prev
+	what->fd = where; // prev = nextt
+}
+```
+
+
+```c
+struct malloc_free_chunk {
+INTERNAL_SIZE_T      mchunk_prev_size; // + 0x00
+INTERNAL_SIZE_T      mchunk_size; // + 0x8  
+struct malloc_chunk* fd; // + 0x10
+struct malloc_chunk* bk; // + 0x18
+}
+```
+
+in order to get the correct address for the `fd` and `bk` pointers 
+we need to subtract it
+```
+p->bk = addr - 0x18
+p->fd = addr - 0x10
+```
+
+---
 
 
 ```c
@@ -100,33 +179,9 @@ typedef struct malloc_chunk* mchunkptr;
 ```
 
 
+---
 
-
-
-
-
-
-
-
-
-
-
-when a chunk (bigger than the tcache size) is allocated, it is removed from the doubly-linked list
-
-
-
-```c
-#define unlink(P, BK, FD) {
-	FD = P->fd;
-	BK = P->bk;
-	FD->bk = BK;
-	BK->fd = FD;
-}
-
-//  p= previous block
-```
-
-take 
-
-example
-
+## Resources
+- [unlink technique explained](https://www.youtube.com/watch?v=FOdkyVcbCk0)
+- [unlink exploit](https://heap-exploitation.dhavalkapil.com/attacks/unlink_exploit)
+- [Once upon a free](https://phrack.org/issues/57/9)
