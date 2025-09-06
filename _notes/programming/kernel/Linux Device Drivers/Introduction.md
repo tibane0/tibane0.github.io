@@ -1,1 +1,0 @@
- A driver is a software layer that lies between the applications and the actual device

@@ -44,17 +44,50 @@ class LinkedList {
 		}
 		
 		void push_front(int data) {
-			Node *node = new Node(data);
+			Node *node = new Node;
 			if (head != nullptr) {
 				node->next = head;
 			}
 			head = note;
 		}
 		
-		void delete(int data) {
+		void remove(int data) {
 			if (head == nullptr) return; // if empty list
+			if (head->data == value) {
+	            Node* temp = head;
+	            head = head->next;
+	            delete temp;
+	            return;
+	        }
+	
+	        Node* current = head;
+	        while (current->next && current->next->data != value) {
+	            current = current->next;
+	        }
+	        if (current->next) {  // found
+	            Node* temp = current->next;
+	            current->next = current->next->next;
+	            delete temp;
+	        }
+				
 		}
 		
+		void print() const {
+	        Node* current = head;
+	        while (current) {
+	            std::cout << current->data << " -> ";
+	            current = current->next;
+	        }
+	        std::cout << "NULL\n";
+	    }
+	    
+	    ~LinkedList() {
+        while (head) {
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+        }
+    }
 		
 };
 

@@ -182,26 +182,13 @@ order: 2
   </div>
 
   <div class="cert-card">
-    <img src="/assets/images/cert/pnpt.jpeg" alt="PNPT" class="cert-img">
-    <h3>PNPT</h3>
-    <p>Practical Network Penetration Tester</p>
-    <p><strong>Status:</strong> Goal</p>
-  </div>
-
-  <div class="cert-card">
     <img src="/assets/images/cert/osed.jpeg" alt="OSED" class="cert-img">
     <h3>OSED</h3>
     <p>Offensive Security Exploit Developer</p>
     <p><strong>Status:</strong> Goal</p>
   </div>
 
-  <div class="cert-card">
-    <img src="/assets/images/cert/ejpt.jpeg" alt="eJPT" class="cert-img">
-    <h3>eJPT</h3>
-    <p>INE's Junior Penetration Tester</p>
-    <p><strong>Status:</strong> Goal</p>
-  </div>
-</div>
+
 
 <style>
 .cert-blocks {

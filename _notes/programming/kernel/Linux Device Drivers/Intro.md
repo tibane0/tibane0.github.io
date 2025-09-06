@@ -67,4 +67,7 @@ brw-rw---- 1 root disk 8, 0 Sep  4 17:43 /dev/sda
 The symbol B in the beginning means that this is a block device
 ### Network Devices
 - Network devices handle packet-based communication, like Ethernet cards or virtual interfaces.
-- 
+
+
+## Kernel Modules v. Applications
+
