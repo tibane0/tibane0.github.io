@@ -4,7 +4,7 @@ title:
 tags: 
 
 ---
-After a chunk is freed, it is inserted inside a bin, but the pointer is available in the program. If the attacker has control of this pointer via [Use after free](./Use-after-free.md) or [Double_Free](Double_Free.md) they can modify the linked list structure in bins and insert their own forged chunks.
+After a chunk is freed, it is inserted inside a bin, but the pointer is available in the program. If the attacker has control of this pointer via [Use after free](./Use-after-free) or [Double_Free](Double_Free) they can modify the linked list structure in bins and insert their own forged chunks.
 
 `gcc fake_chunk.c -o chall`
 
