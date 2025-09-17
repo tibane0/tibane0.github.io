@@ -26,8 +26,11 @@ write primitive (write-what-where)
 2. build a fake_chunk at start of chunk1 and it should overflow into chunk2 metadata so can set `prev_size` and `prev_inuse` bit
 	- The size of fake chunk should be equal to `prev_size` field of the next chunk. Size must be `chunk2 (from data) - chunk1 `
 	- `fd` and `bk` of fake chunk should  be 
-		- `fd` :WHERE
-		- `bk` : WHAT
+		- `fd` :WHERE - 0x18
+		- `bk` : WHAT - 0x10
+3. trigger unlink
+
+
 ```c
 p->bk = addr - 0x18
 p->fd = addr - 0x10
@@ -185,3 +188,29 @@ typedef struct malloc_chunk* mchunkptr;
 - [unlink technique explained](https://www.youtube.com/watch?v=FOdkyVcbCk0)
 - [unlink exploit](https://heap-exploitation.dhavalkapil.com/attacks/unlink_exploit)
 - [Once upon a free](https://phrack.org/issues/57/9)
+
+---
+
+```c
+struct fake_chunk_unlink {
+	fd,
+	bk
+	// data
+	// next chunk
+	prev_size
+	fake_size // unset prev_inuse bit 
+}
+```
+
+--- 
+steps
+
+1. control chunk data and be able to overflow the metadata of adjacent chunk. 
+2. fake chunk : forge a fake chunk so it looks like legitimate memory block
+3. The fake chunk fd and bk pointers should satisfies the pointer relationship check in unlink opearation. 
+4. Modify prev_size of adjacent chunk to pass size check of unlink, and unset its prev_inuse bit
+5. Trigger the unlink operation. free adjacent chunk.
+
+--- 
+- two chunk with overflow into second chunk
+- prev size of corrupted chunk goes must be size from prev_size 

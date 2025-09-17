@@ -143,6 +143,7 @@ order: 2
 </div>
 
 
+<!--
 ## Certifications  
 
 ### Completed
@@ -336,3 +337,4 @@ order: 2
 Feel free to connect, share your thoughts, and let's learn and grow together in the exciting realm of cybersecurity!
 
 
+--> 
