@@ -1,0 +1,149 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tibane0.github.io/</id>
+  <title>tibane</title>
+  <subtitle>Portfolio and blog of an aspiring offensive security researcher. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-09-26T23:02:17+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://tibane0.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://tibane0.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://tibane0.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Who Needs POP RDI? You Have gets()</title>
+    <link href="https://tibane0.github.io/post/ret2gets/" rel="alternate" type="text/html" title="Who Needs POP RDI? You Have gets()" />
+    <published>2025-09-26T00:00:00+02:00</published>
+  
+    <updated>2025-09-26T23:02:11+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/ret2gets/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/ret2gets/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="rop" />
+    
+    <category term="ret2gets" />
+    
+  
+
+  <summary>Facing a gadget-poor binary? This post reveals how gets() can be your ultimate ROP primitive. By understanding how gets() reuses the existing RDI value from the vulnerable buffer, we can craft precise chains that set up function arguments and leak libc addresses without traditional gadgets.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Old vs. Modern Heap Exploitation — Unlink Explained</title>
+    <link href="https://tibane0.github.io/post/unlink-exploit/" rel="alternate" type="text/html" title="Old vs. Modern Heap Exploitation — Unlink Explained" />
+    <published>2025-09-07T00:00:00+02:00</published>
+  
+    <updated>2025-09-26T23:02:11+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/unlink-exploit/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/unlink-exploit/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Understanding how unlinking happens in libc (old and modern)  and how to exploit it</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title> Buffer Overflow with Global Variable Control</title>
+    <link href="https://tibane0.github.io/post/Global_varibale_overwrite/" rel="alternate" type="text/html" title=" Buffer Overflow with Global Variable Control" />
+    <published>2025-07-28T00:00:00+02:00</published>
+  
+    <updated>2025-07-28T15:51:51+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Global_varibale_overwrite/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Global_varibale_overwrite/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>Exploit Write-up: Buffer Overflow with Global Variable Control  Challenge  Overview  In this challenge, we are given a C program that contains a buffer overflow vulnerability in the func() function. The goal is to exploit this vulnerability to print the contents of the correct flag file, flag2.txt, even though the binary is hardcoded to open flag1.txt.    Source Code Summary  static const char*...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title> Pwn &amp; Reverse Engineering Lab with Docker</title>
+    <link href="https://tibane0.github.io/post/Pwn-Environment-Lab/" rel="alternate" type="text/html" title=" Pwn &amp;amp; Reverse Engineering Lab with Docker" />
+    <published>2025-07-23T00:00:00+02:00</published>
+  
+    <updated>2025-09-17T10:13:39+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Pwn-Environment-Lab/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Pwn-Environment-Lab/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>Building a Reproducible Pwn &amp;amp;amp; Reverse Engineering Lab with Docker  Spinning up a reliable workspace for reverse engineering and binary exploitation on modern machines can be tricky. Old challenges expect legacy libc, glibc quirks, and tools that no longer compile cleanly.  By containerizing the environment, you get isolation, repeatability, and an easy way to share your setup. This post wal...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>UMDCTF Gambling CTF WriteUp</title>
+    <link href="https://tibane0.github.io/post/Gambling/" rel="alternate" type="text/html" title="UMDCTF Gambling CTF WriteUp" />
+    <published>2025-04-28T00:00:00+02:00</published>
+  
+    <updated>2025-04-28T00:00:00+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Gambling/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Gambling/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>UMDCTF Gambling pwn challenge    About binary  pwn checksec gambling [*] &amp;#39;/home/hacker/REPO/binexp/comp/umdctf/gambling/gambling&amp;#39;     Arch:     i386-32-little     RELRO:    Partial RELRO     Stack:    No canary found     NX:       NX enabled     PIE:      No PIE (0x8048000)     FORTIFY:  Enabled      Source Code  #include &amp;amp;lt;stdio.h&amp;amp;gt; #include &amp;amp;lt;string.h&amp;amp;gt; #include &amp;amp;lt;stdlib.h&amp;amp;gt;  floa...</summary>
+
+  </entry>
+
+</feed>
+
+
