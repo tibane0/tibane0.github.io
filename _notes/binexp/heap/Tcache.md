@@ -54,7 +54,7 @@ typedef struct tcache_entry {
 - allocate 2 or more heap buffers (within tcache bin)
 - free the buffers
 	- tcache bin `[ buffer_addr1 -> buffer_addr2 ]` 
-- overwrite first 8 bytes (fd) of `buffer_addr1` to point to target address
+- overwrite first 8 bytes of `buffer_addr1` to point to target address
 	- tcache bin `[ buffer_addr1 -> (target_addr) ]`
 - allocate first buffer
 	- tcache bin `[ target_addr ]`

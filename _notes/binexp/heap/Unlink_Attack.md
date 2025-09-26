@@ -32,8 +32,8 @@ write primitive (write-what-where)
 
 
 ```c
-p->bk = addr - 0x18
-p->fd = addr - 0x10
+p->bk = addr - 0x10  
+p->fd = addr - 0x18
 ```
 3. Enter fake chunk in chunk1
 4. Trigger the unlink by freeing chunk 2
@@ -97,7 +97,7 @@ p->fd = addr - 0x10
 ```
 
 ---
-
+	
 
 ```c
 #include <stdio.h>
@@ -210,6 +210,34 @@ steps
 3. The fake chunk fd and bk pointers should satisfies the pointer relationship check in unlink opearation. 
 4. Modify prev_size of adjacent chunk to pass size check of unlink, and unset its prev_inuse bit
 5. Trigger the unlink operation. free adjacent chunk.
+
+
+checks
+- in order to pass the `unlink` check for `if (__builtin_expect (fd->bk != p || bk->fd != p, 0))`, the back pointer of the next chunk and the forward pointer of the previous chunk must be equal to the chunk address of our fake chunk.\
+- size check of fake chunk
+- `p->fd_nextsize != NULL` | make `p->fd_nextsize = NULL` 
+- is `prev_inuse` bit set? | should be not set
+
+
+- have a pointer to heap chunk to be stored in an area of memory we can read from.
+- have address of pointer that the fake chunk is stored at. ` subtract 0x18` to setup `P->fd` pointer (first 0x10 are metadata)
+- `subtract 0x10` from pointer to our fake heap chunk (`P->bk)` 
+
+fake chunk
+```
+# prev size  | 0x0
+# size | chunk size - 0x10 (no metadata)
+# fd ptr | (addr - 0x18) 
+# bk ptr | (addr - 0x10)
+# fd_nextsize | should be 0x0 (NULL)
+```
+
+overwrite
+```
+# prev size | same as fakechunk 
+# size | chunk size + 0x10 | size is usually chunk size + 0x10 + 0x1 (the 0x1 for prev_inuse bit)
+```
+
 
 --- 
 - two chunk with overflow into second chunk

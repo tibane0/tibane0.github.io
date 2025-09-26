@@ -135,3 +135,18 @@ Each arena (`malloc_state` struct) manages:
 - [Bins]() : Free lists for recycled chunks
 - Heap Segments
 
+---
+---
+# Heap Exploitation
+
+many heap exploitation use the same core concepts
+- use after free
+- double free 
+- buffer overflow
+- corrupting heap metadata
+- overlapping allocations
+
+Taking advantage of consolidation
+chunks that go to the unsorted bin
+-   a correctly sized large malloc can clear fastbin and cause consolidation
+- 
