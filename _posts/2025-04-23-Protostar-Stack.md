@@ -1,10 +1,14 @@
 ---
-title: Protostar Stack
-data: 2025-04-23
+layout: post
+title: Protostar Stack Writeups
+description:
+date: 2025-04-23
 categories:
   - pwn
+  - writeup
+tags:
+  - stack
 ---
-
 # Protostar Stack Writeups
 
 ## Stack 0

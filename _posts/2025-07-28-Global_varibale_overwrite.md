@@ -1,9 +1,13 @@
 ---
 layout: post
-title: " Buffer Overflow with Global Variable Control"
+title: Global Variable Overwrite
+description:
 date: 2025-07-28
 categories:
-  - pwn
+  - pwn 
+  - writeup
+tags:
+  - stack
 ---
 # Exploit Write-up: Buffer Overflow with Global Variable Control
 
