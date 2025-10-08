@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/binexp/stack/ROP/ret2dlresolve.md",
+                "file": "_posts/2025-10-05-Fastbin-dup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ret2dlresolve"
+              "title": "Backlinks for 2025-10-05-Fastbin-dup"
             }
           },
           {
@@ -114,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2025-07-21-Pwn-Environment-Lab.md",
+                "file": "_posts/2025-10-05-Fastbin-dup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-07-21-Pwn-Environment-Lab"
+              "title": "Outgoing links from 2025-10-05-Fastbin-dup"
             }
           },
           {
@@ -172,25 +172,25 @@
   },
   "active": "1893755859ec0252",
   "lastOpenFiles": [
-    "_posts/2025-09-25-tcache-exploitation.md",
+    "_posts/2025-10-05-Fastbin-dup.md",
     "_posts/2025-09-27-information-leaks.md",
-    "_posts/2025-09-26-ret2gets.md",
-    "_tabs/notes.md",
-    "_site/tags/info-leak/index.html",
-    "_site/tags/info-leak",
-    "_posts/2025-07-28-Global_varibale_overwrite.md",
-    "_posts/2025-04-28-Gambling.md",
-    "_posts/2025-04-23-Protostar-Stack.md",
-    "_site/tags/stack/index.html",
-    "_site/tags/stack",
-    "_site/categories/writeup/index.html",
-    "_site/categories/writeup",
-    "_site/categories/leaks/index.html",
-    "_site/categories/leaks",
+    "_notes/binexp/heap/Heap.md",
     "_posts/2025-09-07-unlink-exploit.md",
-    "_posts/2025-07-21-Pwn-Environment-Lab.md",
-    "_site/tags/ret2gets/index.html",
-    "_site/tags/ret2gets",
+    "_posts/2025-09-25-tcache-exploitation.md",
+    "_posts/2025-09-26-ret2gets.md",
+    "_site/categories/rop/index.html",
+    "_site/categories/rop",
+    "_site/categories/info-leaks/index.html",
+    "_site/categories/info-leaks",
+    "_site/categories/notes/index.html",
+    "_site/categories/notes",
+    "_posts/2025-04-23-Protostar-Stack.md",
+    "_notes/binexp/heap/fastbin attack.md",
+    "_tabs/notes.md",
+    "_site/tags/index.html",
+    "_site/archives/index.html",
+    "_site/archives",
+    "_site/projects/index.html",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/binexp/stack/ROP/ret2gets.md",
@@ -213,9 +213,10 @@
     "_site/assets/images/oob-write-stack.jpg",
     "_site/assets/images/oob-read-stack.jpg",
     "_site/assets/images/netcad.png",
-    "_notes/binexp/heap/Unlink_Attack.md",
-    "_notes/binexp/heap/Tcache.md",
-    "_notes/binexp/stack/ROP/ret2gets.md",
-    "_notes/binexp/stack/basic-bof.md"
+    "_notes/binexp/heap/fastbin dup.md",
+    "_posts/2025-07-28-Global_varibale_overwrite.md",
+    "_posts/2025-04-28-Gambling.md",
+    "_posts/2025-07-21-Pwn-Environment-Lab.md",
+    "_notes/binexp/heap/Unlink_Attack.md"
   ]
 }

@@ -5,7 +5,8 @@ description:
 date: 2025-09-27
 categories:
   - pwn
-  - leaks
+  - notes
+  - info-leaks
 tags:
   - info-leak
 ---
@@ -161,6 +162,16 @@ bk_nextsize; // 0x18
 ```
 
 At offset `0x18`
+
+Steps:
+- Allocate 9 chunks 
+	- chunks from 1 to 7 will be used to fill tcache
+	- chunk 8 will be placed in unsorted bin when freed
+	- chunk 9 prevents top chunk consolidation
+- Free the first 8 chunks
+- Use a use after free of the chunk that is in the unsorted bin to leak the `bk` pointer which will be a libc addres
+- Use the libc address to calculate libc base address.
+
 
 Example
 
