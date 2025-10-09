@@ -9,6 +9,7 @@ categories:
   - heap-exploitation
 tags:
   - fastbin-dup
+  - fastbin
 ---
 # Fastbin Exploitation
 
@@ -16,6 +17,10 @@ tags:
 
 This heap exploitation technique leverages a double free vulnerability to trick the allocator into returning the same chunk twice, without freeing it in between. This technique is used to corrupt a chunk's metadata to link a fake chunk(target address) into a fastbin list.  This can be used to gain arbitrary read/write primitive.
 
+### Fastbin Review
+
+There are 10 fastbins which are maintained using a singly linked list. The linked list uses a Last In First Out (LIFO) manner. Each bin has chunks of the same size and the sizes are : 16, 24, 32, 40, 48, 56, 64, 72, 80 and 88. The sizes include metadata (`prev_size` and `size`). 
+Consolidation does NOT happen with free fastbin size chunks.
 ### Double Free Vulnerability
 
 A double free vulnerability occurs when a chunk of memory that was previously allocated is freed more than once. This is dangerous because it corrupts the allocato's data structures.
@@ -61,3 +66,8 @@ When a new allocation of that size is made, the allocator will return the applie
 
 
 
+## Write Targets
+So which targets would we wish to overwrite?
+- `__free_hook`
+- `__malloc_hook`
+- Global Offset Table (GOT)

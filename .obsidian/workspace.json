@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-07-unlink-exploit.md",
+                "file": "_posts/2025-10-05-Fastbin-dup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-07-unlink-exploit"
+              "title": "2025-10-05-Fastbin-dup"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-09-07-unlink-exploit.md",
+                "file": "_posts/2025-10-05-Fastbin-dup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-09-07-unlink-exploit"
+              "title": "Outline of 2025-10-05-Fastbin-dup"
             }
           }
         ],
@@ -172,12 +172,18 @@
   },
   "active": "1893755859ec0252",
   "lastOpenFiles": [
+    "_posts/2025-10-10-Unsorted-bin.md",
     "_posts/2025-10-05-Fastbin-dup.md",
-    "_posts/2025-09-27-information-leaks.md",
-    "_notes/binexp/heap/Heap.md",
+    "_posts/2025-07-28-Global_varibale_overwrite.md",
     "_posts/2025-09-07-unlink-exploit.md",
     "_posts/2025-09-25-tcache-exploitation.md",
     "_posts/2025-09-26-ret2gets.md",
+    "_posts/2025-09-27-information-leaks.md",
+    "_notes/binexp/heap/Heap.md",
+    "_site/post/Fastbin-dup/index.html",
+    "_site/post/Fastbin-dup",
+    "_site/tags/fastbin-dup/index.html",
+    "_site/tags/fastbin-dup",
     "_site/categories/rop/index.html",
     "_site/categories/rop",
     "_site/categories/info-leaks/index.html",
@@ -187,10 +193,6 @@
     "_posts/2025-04-23-Protostar-Stack.md",
     "_notes/binexp/heap/fastbin attack.md",
     "_tabs/notes.md",
-    "_site/tags/index.html",
-    "_site/archives/index.html",
-    "_site/archives",
-    "_site/projects/index.html",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/binexp/stack/ROP/ret2gets.md",
@@ -214,9 +216,7 @@
     "_site/assets/images/oob-read-stack.jpg",
     "_site/assets/images/netcad.png",
     "_notes/binexp/heap/fastbin dup.md",
-    "_posts/2025-07-28-Global_varibale_overwrite.md",
     "_posts/2025-04-28-Gambling.md",
-    "_posts/2025-07-21-Pwn-Environment-Lab.md",
-    "_notes/binexp/heap/Unlink_Attack.md"
+    "_posts/2025-07-21-Pwn-Environment-Lab.md"
   ]
 }
