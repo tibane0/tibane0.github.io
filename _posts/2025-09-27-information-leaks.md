@@ -109,7 +109,7 @@ payload = flat(
 
 #### Libc leak via unsorted bin
 
-A common technique to get libc leak is to free a big chunk (larger than 0x400 bytes) so it gets into the unsorted bin. The unsorted bin is a doubly linked list and its list head is stored in the libc's data section, when we free a chunk into the unsorted bin for the first time, its backward pointer (`bk`) then points into the libc, at a known offset. If we can leak this pointer, than we can compute the base address of libc.
+A common technique to get libc leak is to free a big chunk (larger than 400 bytes) so it gets into the unsorted bin. The unsorted bin is a doubly linked list and its list head is stored in the libc's data section, when we free a chunk into the unsorted bin for the first time, its backward pointer (`bk`) then points into the libc, at a known offset. If we can leak this pointer, than we can compute the base address of libc.
 
 **What If we do not control the size of the heap memory allocations?**
 
