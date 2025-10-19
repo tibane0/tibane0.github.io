@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-10-13-srop.md",
+                "file": "_posts/2025-09-25-tcache-poisioning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-13-srop"
+              "title": "2025-09-25-tcache-poisioning"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-10-13-srop.md",
+                "file": "_posts/2025-09-25-tcache-poisioning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-13-srop"
+              "title": "Outline of 2025-09-25-tcache-poisioning"
             }
           }
         ],
@@ -172,19 +172,21 @@
   },
   "active": "1893755859ec0252",
   "lastOpenFiles": [
-    "_posts/2025-10-13-file-structure-exploitation.md",
-    "_posts/2025-10-10-UDA.md",
+    "assets/images/pwn/tcache/result.png",
+    "assets/images/pwn/tcache/tcache_c.png",
+    "assets/images/pwn/tcache/Untitled.md",
+    "assets/images/pwn/tcache/tcache_bins.png",
+    "_posts/2025-09-25-tcache-poisioning.md",
+    "assets/images/pwn/tcache",
+    "_posts/2025-09-07-unlink-exploit.md",
     "_posts/2025-10-05-Fastbin-dup.md",
+    "_posts/2025-10-30-file-structure-exploitation.md",
+    "_posts/2025-10-10-UDA.md",
+    "_posts/2025-10-13-srop.md",
     "_posts/2025-09-27-information-leaks.md",
     "_posts/2025-09-26-ret2gets.md",
-    "_posts/2025-09-25-tcache-exploitation.md",
-    "_posts/2025-09-07-unlink-exploit.md",
-    "_posts/2025-07-28-Global_varibale_overwrite.md",
-    "_posts/2025-07-21-Pwn-Environment-Lab.md",
-    "_posts/2025-04-28-Gambling.md",
-    "_posts/2025-04-23-Protostar-Stack.md",
-    "_notes/programming/dsa/Algorithms/Searching Algorithms.md",
-    "_site/categories/index.html",
+    "_notes/programming/dsa/Data Structures/Binary Search Tree.md",
+    "_notes/programming/dsa/Data Structures/Binary Tree.md",
     "_site/tags/index.html",
     "_site/archives/index.html",
     "_site/archives",
@@ -192,8 +194,8 @@
     "_site/projects",
     "_site/about/index.html",
     "_site/about",
-    "_site/post/tcache-exploitation/index.html",
     "_site/post/unlink-exploit/index.html",
+    "_site/post/tcache-exploitation/index.html",
     "_site/assets/img/favicons/mstile-150x150.png",
     "_site/assets/img/favicons/favicon-32x32.png",
     "_site/assets/img/favicons/favicon-16x16.png",
@@ -202,9 +204,9 @@
     "_site/assets/img/favicons/android-chrome-192x192.png",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
-    "_site/notes/programming/dsa/Data Structures/Binary Tree.md",
-    "_site/notes/programming/dsa/Data Structures/Stack.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
+    "_site/notes/programming/dsa/Data Structures/Stack.md",
+    "_site/notes/programming/dsa/Data Structures/Binary Tree.md",
     "_site/notes/programming/dsa/Data Structures/Binary Search Tree.md",
     "_site/notes/programming/dsa/Algorithms/Searching Algorithms.md",
     "_site/notes/binexp/stack/ROP/ret2gets.md",
@@ -215,8 +217,6 @@
     "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
     "_site/notes/red-teaming/Reconnaissance.md",
     "_site/assets/images/pwn/uda/stack_frame2.png",
-    "_site/assets/images/pwn/uda/stack_frame1.png",
-    "_site/assets/images/pwn/uda/enter_string.png",
-    "_site/assets/images/pwn/uda/b1.png"
+    "_site/assets/images/pwn/uda/stack_frame1.png"
   ]
 }

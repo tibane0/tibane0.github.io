@@ -31,6 +31,7 @@ Insert a new node while maintaining binary search tree property
 
 - Node has no children then remove directly.
 - Node has one child replace node with its child.
+
 - Node has two children means replace node with in-order successor/predecessor and delete that successor/predecessor.
 - Time Complexity:
 	- avg: `O(log n)`

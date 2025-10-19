@@ -11,7 +11,6 @@ tags:
 ---
 # Information/Memory Leaks In Binary Exploitation
 
-
 ## What is a memory leak?
 A **information/memory leak** is any primitive in a binary that reveals bytes from the program's memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomiation (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer that you can use to compute a base address such libc, PIE, heap, etc. base addresses
 
