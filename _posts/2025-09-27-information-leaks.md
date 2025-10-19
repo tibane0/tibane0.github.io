@@ -4,7 +4,6 @@ title: Information Disclosure
 description:
 date: 2025-09-27
 categories:
-  - pwn
   - notes
   - info-leaks
 tags:

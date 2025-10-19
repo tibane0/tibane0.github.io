@@ -4,10 +4,10 @@ title: Protostar Stack Writeups
 description:
 date: 2025-04-23
 categories:
-  - pwn 
   - writeup
+  - pwn
 tags:
-  - stack
+  - protostar-stack
 ---
 # Protostar Stack Writeups
 

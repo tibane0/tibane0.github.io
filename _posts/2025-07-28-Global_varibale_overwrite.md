@@ -4,8 +4,8 @@ title: Global Variable Overwrite
 description:
 date: 2025-07-28
 categories:
-  - pwn
   - writeup
+  - pwn
 tags:
   - stack
 ---

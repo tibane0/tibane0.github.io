@@ -4,7 +4,6 @@ title: Fastbin Exploitation
 description: Explanation of the `fastbin dup` heap exploitation technique
 date: 2025-10-05
 categories:
-  - pwn
   - notes
   - heap-exploitation
 tags:
