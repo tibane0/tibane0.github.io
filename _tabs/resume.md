@@ -12,7 +12,7 @@ order: 7
 ---
 ## Skills
 
-**Languages:** C, C++, Python, PHP, Assembly (x86/x64, ARM)  
+**Languages:** C, C++, Python, PHP, Assembly (x86/x64)  
 **Tools:** GDB (GEF), Binary Ninja, Radare2, pwntools, AFL++  
 **Domains:** Vulnerability Research, Exploit Development, Reverse Engineering, Systems Programming  
 

@@ -102,8 +102,6 @@ order: 2
       <p><code>$ what-do-i-do</code></p>
       <p>&gt; Exploit Development</p>
        <p>&gt; Reverse Engineering</p>
-      <p>&gt; Red Teaming</p>
-      <p>&gt; Software Development</p>
     </div>
   </div>
 
@@ -113,21 +111,21 @@ order: 2
   <div class="profile-right">
     Hello 
 
-    I'm Nkateko,a, cybersecurity enthusiast focused on real-world offensive security.
+    I'm Nkateko,a, cybersecurity enthusiast focused on low-level exploit development.
     <p>
-    This blog is my personal sandbox, a space where I will explore offensive security and share my progress, insights and discoveries as I document my journey. 
+    This blog is where i will post CTF writeups and real world research that i do. 
     </p>
-    Here on this blog, you can expect to find walkthroughs on binary exploitation challanges and real world exploits, walkthroughs of vulnerable machines, deep dives on offensive tools and applying my software development skills to security.
+	 I'm currently learning low level vulnerability research and exploit development via CTFs. Next on my list is to get into kernel exploitation. 
+
+	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs alone. (`Looking for a team to join`)
         <div class="skills">
       <h4>My Toolkit Includes:</h4>
       <span>C/C++</span>
       <span>Python</span>
       <span>Assembly</span>
       <span>PHP</span>
-      <span>Software Development</span>
       <span>Reverse Engineering</span>
       <span>Exploit Development</span>
-      <span>Red Teaming</span>
     </div>
 
     <div class="disclaimer">
@@ -142,6 +140,8 @@ order: 2
   </div>
 </div>
 
+>Open to Work
+>You can contact me if you have a decent opportunity for me related to security jobs.
 
 <!--
 ## Certifications  
