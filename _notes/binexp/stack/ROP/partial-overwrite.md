@@ -12,6 +12,6 @@ Instead of overwriting all bytes of a target address, you overwrite only the low
 ## Why use it
 
 A partial overwrite avoids needing the full pointer value.
-#### Bypass `ASLR` 
+#### Bypass `ASLR` and `PIE`
 - `ASLR` randomises the higher bytes of addresses but keep the lower bytes predictable.
-
+- 
