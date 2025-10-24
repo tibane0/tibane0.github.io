@@ -1,0 +1,153 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://tibane0.github.io/</id>
+  <title>tibane</title>
+  <subtitle>Portfolio and blog of an aspiring offensive security researcher. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-10-24T08:57:13+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://tibane0.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://tibane0.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://tibane0.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>QNQSEC Debtor's Database Writeup</title>
+    <link href="https://tibane0.github.io/post/qnqsec-debtors-database/" rel="alternate" type="text/html" title="QNQSEC Debtor&amp;apos;s Database Writeup" />
+    <published>2025-10-20T00:00:00+02:00</published>
+  
+    <updated>2025-10-20T00:00:00+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/qnqsec-debtors-database/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/qnqsec-debtors-database/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="writeup" />
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>About The binary    The binary is dynamically linked, and has all security mitigations turned on. Reversing main  int main() { 	void* fsbase 	int64_t canary = *(fsbase + 0x28) 	setup() 	puts(&amp;quot;What is your name (9 chars or le…&amp;quot;) 	void name 	fgets(&amp;amp;amp;name, 0xa, stdin) 	printf(&amp;quot;Hello, &amp;quot;) 	printf(&amp;amp;amp;name)  // &amp;amp;lt;-- format string 	putchar(0xa) 	fflush(stdin) 	menu() 	noreturn }   main() prompts...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Sigreturn Oriented Programming</title>
+    <link href="https://tibane0.github.io/post/srop/" rel="alternate" type="text/html" title="Sigreturn Oriented Programming" />
+    <published>2025-10-13T00:00:00+02:00</published>
+  
+    <updated>2025-10-19T13:12:43+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/srop/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/srop/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="notes" />
+    
+    <category term="rop" />
+    
+  
+
+  <summary>Sigreturn Oriented Programming.  SROP (Sigreturn Oriented Programming) is binary exploitation technique that leverages the signal handling mechanisms in POSIX systems to gain control over CPU registers. This is achieved by crafting a fake signal frame on the stack and then invoking the sigreturn system call.  The signal handling mechanism  SROP exploits the process used by POSIX systems to hand...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Uninitialized Data Access</title>
+    <link href="https://tibane0.github.io/post/UDA/" rel="alternate" type="text/html" title="Uninitialized Data Access" />
+    <published>2025-10-10T00:00:00+02:00</published>
+  
+    <updated>2025-10-19T09:19:56+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/UDA/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/UDA/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="notes" />
+    
+    <category term="uda" />
+    
+  
+
+  <summary>Overview  So what are Uninitialized variables? Uninitialized variables are variables that are declared byt they are not assigned a value  e.g.  #include &amp;amp;lt;stdio.h&amp;amp;gt;  // complile : gcc vuln.c -o vuln  int main() { 	int a, b; 	printf(&amp;quot;a = %d, b = %d\n&amp;quot;, a, b); 	return 0; }   Output  ./vuln  a = 32676, b = -1360491824   The values are random numbers which we did not assign. Since we did not in...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Fastbin Exploitation</title>
+    <link href="https://tibane0.github.io/post/Fastbin-dup/" rel="alternate" type="text/html" title="Fastbin Exploitation" />
+    <published>2025-10-05T00:00:00+02:00</published>
+  
+    <updated>2025-10-19T13:12:43+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/Fastbin-dup/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/Fastbin-dup/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="notes" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation of the `fastbin dup` heap exploitation technique</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Information Disclosure</title>
+    <link href="https://tibane0.github.io/post/information-leaks/" rel="alternate" type="text/html" title="Information Disclosure" />
+    <published>2025-09-27T00:00:00+02:00</published>
+  
+    <updated>2025-10-19T13:12:43+02:00</updated>
+  
+    <id>https://tibane0.github.io/post/information-leaks/</id>
+    <content type="text/html" src="https://tibane0.github.io/post/information-leaks/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="notes" />
+    
+    <category term="info-leaks" />
+    
+  
+
+  <summary>Information/Memory Leaks In Binary Exploitation  What is a memory leak? A information/memory leak is any primitive in a binary that reveals bytes from the program’s memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomiation (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer...</summary>
+
+  </entry>
+
+</feed>
+
+
