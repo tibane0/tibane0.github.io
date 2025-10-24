@@ -128,6 +128,11 @@ order: 2
       <span>Exploit Development</span>
     </div>
 
+  <div class="disclaimer">
+      <strong>Open to Work</strong><br>
+	You can contact me if you have a decent opportunity for me related to security jobs.
+    </div>
+
     <div class="disclaimer">
       <strong>Legal Disclaimer:</strong><br>
       Everything you find here — code, blog posts, or techniques — is for educational purposes only.  
@@ -139,9 +144,6 @@ order: 2
     </div>
   </div>
 </div>
-
->Open to Work
->You can contact me if you have a decent opportunity for me related to security jobs.
 
 <!--
 ## Certifications  
