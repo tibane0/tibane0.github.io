@@ -183,7 +183,7 @@ order: 3
 <div class="project-card">
   <img src="/assets/images/tibaneC2.png" alt="TibaneC2 Framework" class="project-image">
   
-  <h3><a href="https://github.com/tibane0/TibaneC2" target="_blank">TibaneC2 Framework</a></h3>
+  <h3><a href="https://github.com/t1b4n3/TibaneC2" target="_blank">TibaneC2 Framework</a></h3>
   <p>A modular Command and Control framework designed for red team operations and security research, built with operational security and extensibility in mind.</p>
 
   <div class="feature-title">Key Components</div>
@@ -203,14 +203,14 @@ order: 3
     <span class="tag">Malware Dev</span>
     <span class="tag">Security Research</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/TibaneC2" target="_blank">View Project</a>
+  <a class="btn" href="https://github.com/t1b4n3/TibaneC2" target="_blank">View Project</a>
 </div>
 
 <!-- CTF Binary Exploitation -->
 <div class="project-card">
   <img src="/assets/images/ctf-pwn.jpeg" alt="CTF Binary Exploitation" class="project-image">
   
-  <h3><a href="https://github.com/tibane0/ctf-pwn" target="_blank">CTF Binary Exploitation</a></h3>
+  <h3><a href="https://github.com/t1b4n3/ctf-pwn" target="_blank">CTF Binary Exploitation</a></h3>
   <p>Collection of solved CTF challenges covering fundamental to advanced binary exploitation techniques with detailed write-ups.</p>
 
   <div class="feature-title">Techniques Covered</div>
@@ -230,7 +230,7 @@ order: 3
     <span class="tag">Python</span>
     <span class="tag">GDB</span>
   </div>
-  <a class="btn" href="https://github.com/tibane0/ctf-pwn" target="_blank">View Challenges</a>
+  <a class="btn" href="https://github.com/t1b4n3/ctf-pwn" target="_blank">View Challenges</a>
 </div>
 
 

@@ -326,5 +326,5 @@ The result
 
 And just like that we get a shell.
 
-[Full Exploit Code Here](https://github.com/tibane0/ctf-writeups/qnqsec/debtors-database/xpl.py)
+[Full Exploit Code Here](https://github.com/t1b4n3/ctf-writeups/qnqsec/debtors-database/xpl.py)
 

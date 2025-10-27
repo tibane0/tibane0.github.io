@@ -88,12 +88,12 @@ order: 2
     <img src="/assets/images/me.jpeg" alt="Profile Image">
     <p><code>$ whoami</code></p>
     <h2>Nkateko Tibane</h2>
-    <p>20 year old, IT student</p>
+    <p>IT student</p>
 
 
     <div class="social-icons">
-      <a href="https://github.com/tibane0" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> |
-      <a href="https://twitter.com/tibane101" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a> |
+      <a href="https://github.com/t1b4n3" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> |
+      <a href="https://twitter.com/t1b4n3" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a> |
       <a href="mailto:nkatekotibane101@gmail.com" title="Email"><i class="fas fa-envelope"></i></a> |
       <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> 
     </div>
@@ -115,10 +115,14 @@ order: 2
     <p>
     This blog is where i will post CTF writeups and real world research that i do. 
     </p>
+    <p>
 	 I'm currently learning low level vulnerability research and exploit development via CTFs. Next on my list is to get into kernel exploitation. 
-
-	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs alone. (`Looking for a team to join`)
-        <div class="skills">
+	</p>
+	
+	<p>
+	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs solo. (Looking for a team to join)
+        </p>
+	<div class="skills">
       <h4>My Toolkit Includes:</h4>
       <span>C/C++</span>
       <span>Python</span>

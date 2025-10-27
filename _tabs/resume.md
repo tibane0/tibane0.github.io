@@ -38,5 +38,5 @@ Custom C2 framework including implant, core server, and web panel.
 ---
 ## Contact
 - **Email:** nkatekotibane101@gmail.com  
-- **GitHub:** [github.com/tibane0](https://github.com/tibane0)  
+- **GitHub:** [github.com/tibane0](https://github.com/t1b4n3)  
 - **LinkedIn:** [linkedin.com/in/nkatekotibane](https://linkedin.com/in/nkatekotibane)

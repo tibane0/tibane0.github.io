@@ -10,17 +10,17 @@ timezone: Africa/Johannesburg
 # ────────────────────────────────────────────────
 # Site Identity
 # ────────────────────────────────────────────────
-title: "tibane"
+title: "t1b4n3"
 tagline: "Exploring low-level development and the craft of pwning."
 description: >-
-  Portfolio and blog of an aspiring offensive security researcher.
+  Portfolio and blog of an aspiring low-level vulnerability researcher and exploit developer.
   Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.
 
-url: "https://tibane0.github.io"
+url: "https://t1b4n3.github.io"
 baseurl: ""         # leave empty for GitHub Pages root
 
 avatar: "assets/images/me.jpeg"              # Sidebar avatar
-social_preview_image: "assets/images/me.jpeg" # og:image for SEO
+social_preview_image: "assets/images/art.png" # og:image for SEO
 
 # ────────────────────────────────────────────────
 # Author & Social Links
@@ -29,15 +29,15 @@ social:
   name: "Nkateko Tibane"
   email: "nkatekotibane101@gmail.com"
   links:
-    - "https://twitter.com/tibane101"
-    - "https://github.com/tibane0"
+    - "https://twitter.com/t1b4n3"
+    - "https://github.com/t1b4n3"
     - "https://www.linkedin.com/in/nkatekotibane"
     
 
 github:
-  username: tibane0
+  username: t1b4n3
 twitter:
-  username: tibane101
+  username: t1b4n3
 linkedin:
   username: nkatekotibane
 
